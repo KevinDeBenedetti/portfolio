@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-
+    <link rel="stylesheet" href="script.js" defer>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&amp;family=Oswald:wght@400;600&amp;display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             <a href="#">contact</a>
         </nav>
     </header>
-    <main class="container">
+    <main class="container home">
         <div class="blockP">
             <div class="profil">
                 <div class="profil__photo">
@@ -44,64 +44,41 @@
     <section class="container">
         <div class="button-bar">
             <div>
-                <i class="fa-solid fa-circle-arrow-down"></i>                
+                <i class="fa-solid fa-circle-arrow-down" id="btn-left"></i>                
                 <h2>compétences</h2>
             </div>
             <div>
-                <h2>expériences</h2>
-                <i class="fa-solid fa-circle-arrow-down"></i>                
+                <h2>réalisations</h2>
+                <i class="fa-solid fa-circle-arrow-down" id="btn-right"></i>                
             </div>
         </div>
-         <div>
-            <div class="projet project1">
-                <div class="project1__title"></div>
-                <div class="project1__teaser">
-                    <div>
-                        <img src="#" alt="photo project1">
-                    </div>
+
+        <div class="hide">
+            <div class="projects">
+                <div class="project">
+                    <h3>Projet 1</h3>
+                    <div class="project__description"></div>
                 </div>
-            </div>
-            <div class="projet project2">
-                <div class="project2__title"></div>
-                <div class="project2__teaser">
-                    <div>
-                        <img src="#" alt="photo project1">
-                    </div>
-                </div>
-            </div>
-            <div class="projet project3">
-                <div class="project3__title"></div>
-                <div class="project3__teaser">
-                    <div>
-                        <img src="#" alt="photo project1">
-                    </div>
-                </div>
-            </div>
-            <div class="projet project4">
-                <div class="project4__title"></div>
-                <div class="project4__teaser">
-                    <div>
-                        <img src="#" alt="photo project1">
-                    </div>
-                </div>
-            </div>
-            <div class="projet project5">
-                <div class="project5__title"></div>
-                <div class="project5__teaser">
-                    <div>
-                        <img src="#" alt="photo project1">
-                    </div>
-                </div>
-            </div>
-            <div class="projet project6">
-                <div class="project6__title"></div>
-                <div class="project6__teaser">
-                    <div>
-                        <img src="#" alt="photo project1">
-                    </div>
-                </div>
-            </div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div> 
         </div>
+        <div class="skills">
+            <div class="skills__bloc">
+                <i class="icon fa-brands fa-html5"></i>
+                <i class="icon fa-brands fa-css3-alt"></i>
+                <i class="icon fa-brands fa-js"></i>
+                <i class="icon fa-brands fa-apple"></i>
+                <i class="icon fa-brands fa-windows"></i>
+                <i class="icon fa-brands fa-linux"></i>
+                <i class="icon fa-brands fa-github"></i>
+            </div>
+            <div class="skills__bloc"></div>
+        </div>
+
     </section>
 </body>
 </html>
