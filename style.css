@@ -2,22 +2,39 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 .container {
-    width: 1200px;
+    width: 1024px;
     margin: 0 auto;
 }
-header {
-    height: 50px;
+main {
+    background-image: url('./img/galaxy-fondNoir.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Header with burger menu */
+#mainHeader {
+    height: 8%;
     width: 100%;
-    margin: auto;
     display: flex;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 1);
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.icons {
+    display: flex;
+    padding-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons img {
+    margin: 0 4%;
+}
+.icons p {
+    color: white;
+    margin: 0 4%;
 }
 nav {
-    width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,7 +42,7 @@ nav {
 a {
     height: unset;
     text-align: center;
-    margin: 30px;
+    margin: 0 30px;
     color: #f7f7f7;
     font-size: 1.1rem;
     text-decoration: none;
@@ -35,32 +52,117 @@ a:hover {
     color: rgb(16, 35, 43);
     text-shadow: 0px 0px 10px rgba(250, 4, 255, 0.5);
 }
-main {
-    background-color: rgba(128, 128, 128, 1);
-    padding: 5% 5%;
-    display: flex;
-    flex-direction: column;
-}
-.home {
-    height: 80vh;
-}
-.blockP {
-    display: flex;
-}
+/* Burger menu */
+/* Code pour un menu buger en responsive */
 .profil {
+    width: 80%;
+    margin: 5% auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 100%;
 }
 .profil__photo img {
     height: 200px;
     width: auto;
+    filter: drop-shadow(0px 0px 8px rgba(54, 255, 4, 0.62));
 }
 .profil__title {
     text-align: center;
     color: #f7f7f7;
+}
+/* Animation texte défilant */
+#star-wars {
+    height: 60vh;
+    width: 40%;
+    margin: 0 auto;
+}
+.fixed-content {
+    color: white;
+    /* Apparition */
+    animation: text-focus-in 24s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+}
+.a-long-time-ago {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    text-align: center;
+    font-size: 32px;
+    color: #4bd5ee;
+    /* Animation */
+    /* Apparition et disparition progressive */
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+}
+@keyframes a-long-time-ago {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+.crawl {
+    /* centrage de l'élément' */
+    position: absolute;
+    left: 15%;
+    width: 80%;
+    bottom: 0;
+    height: 50em;
+    /* cosmétique */
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+    /* Applique la transformation  */
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+}
+.crawl > div {
+    /* positionne la div en bas de l'écran (non visible) */
+    /* l'animation la fait remonter progressivement */
+    position: absolute;
+    opacity: 0;
+    top: 100%; 
+    animation-delay: 3s; /* Démarre l'animation après la première */
+    animation-duration: 20s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+}
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1; /* disparition progressive à la fin */
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
 }
 .prez {
     width: 60%;
@@ -74,14 +176,14 @@ main {
     margin: 10% 10%;    
 }
 /* Using grid for a compatible z-index */
-section {
+.content {
     height: 800px;
     width: 100%;
     margin: 0 0;
     box-sizing: border-box;
     background-image: url('./img/ivan-diaz-UrwHK4k8Fmk-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* position: relative;
     z-index: 1;
     display: grid;
