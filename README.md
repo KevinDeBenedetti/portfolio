@@ -1,6 +1,6 @@
 # portfolio
 
-Tailles d'écrans : 
+## Tailles d'écrans : 
 
 [x]4k: 2560px
 [x]Laptop large : 1440px
