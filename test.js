@@ -2,7 +2,7 @@
 let frameCounter = 0;
 // Nombre de frame à attendre avant d'appeler la fonction updatePositions
 // Réglage de la vitesse de l'animation 
-let maxFrameCount = 20;
+let maxFrameCount = 10;
 
 // Création des étoiles
 for(let i = 0; i < 250 ; i++) {
@@ -12,7 +12,7 @@ for(let i = 0; i < 250 ; i++) {
     star.style.left = Math.random() * 100 + "%";
     star.style.width = Math.random() * 3 + "px"
     star.style.height = star.style.width;
-    document.querySelector("#starField").appendChild(star);
+    document.querySelector("#starfield").appendChild(star);
 }
 // Fonction pour mettre à jour la position des étoiles de manière aléatoire
 function updatePositions() {
