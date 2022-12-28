@@ -21,12 +21,13 @@
     /* Effet de scintillement */
     transition: opacity 0.5s ease-in-out;
 }
+/* Style de la partie main */
 main {
-    height: 100vh;
+    min-height: 100vh;
 }
 /* Style du header principal */
 #mainHeader {
-    height: 50px;
+    height: 80px;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
@@ -96,16 +97,33 @@ nav a:hover {
     color: #f7f7f7;
     margin-left: 10%;
 }
+/* Style du paragraphe de 300 mots */
 .fixed_content {
     color: white;
     margin-top: 10%;
 }
-/* Texte défilant */
-#starWars {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Style de la partie informations */
+#informations {
+    height: 20vh;
+    color: white;
 }
+#informations div {
+    display: flex;
+    align-items: center;
+    margin: 6% 0;
+}
+#informations div:hover {
+    cursor: pointer;
+    text-shadow: 0 0 2px #ffff66;
+    color: rgba(54, 255, 4, 0.62);
+}
+#informations div i {
+    font-size: 2em;
+}
+#informations div h2 {
+    margin-left: 4%;
+}
+/* Texte défilant */
 .a-long-time-ago {
     position: absolute;
     top: 30vh;
@@ -178,10 +196,113 @@ nav a:hover {
         opacity: 0;
     }
 }
+/* Fenêtre modale */
+.modal-container {
+    /* Cacher la modale */
+    display: none;
+    /* Position de la modale */
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3
+}
+/* Contenu de la modale */
+.modal {
+    background-color: rgba(26, 26, 26, 0.9);
+    border: 1px solid white;
+    height: 90%;
+    width: 90%;
+    border-radius: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+/* Bouton pour fermer la modale */
+.close-modal {
+    align-self: end;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: red;
+    color: red;
+}
+.close-modal:hover {
+    background-color: rgb(67, 67, 67);
+}
+/* Fenêtre modale Compétences */
+.contentExp {
+    width: 100%;
+}
+.contentExp h2 {
+    color: #fff;
+    text-shadow: 0 0 2px #ffff66;
+    text-transform: uppercase;
+    padding: 4%;
+    font-size: 2em;
+    text-align: center;
+}
+/* Partie contenant les compétences techniques */
+.itemsExp {
+    margin-top: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+    justify-items: center;
+}
+.itemsExp div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 140px;
+    width: 140px;
+    border-radius: 2px;
+}
+/* Noms des technologies */
+.itemsExp h3 {
+    margin-top: 8%;
+    color: #000;
+}
+/* Taille des icones */
+.itemsExp i {
+    font-size: 4em;
+}
+.itemsExp div:nth-of-type(1) i {
+    color: #E24E30;
+}
+.itemsExp div:nth-of-type(2) i {
+    color: #2952DE;
+}
+.itemsExp div:nth-of-type(3) i {
+    color: #F6DC3A;
+}
+.itemsExp div:nth-of-type(4) i {
+    color: #777CB1;
+}
+.itemsExp div:nth-of-type(5) i {
+    color: #000;
+}
+.itemsExp div:nth-of-type(6) i {
+    color: #1F89C4;
+}
 /* Footer */
 footer {
     height: 50px;
-    background-color: #ffff66;
+    background-color: #ffff669c;
 }
 /* Desktop & Labptop */
 /* Laptop large */
