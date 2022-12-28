@@ -34,3 +34,19 @@ function animate() {
 }
 
 animate();
+
+// Fenêtre modale
+let btnExp = document.querySelector("#btn-left");
+let btnRea = document.querySelector("#btn-right");
+let btnClose = document.querySelector(".close-modal");
+
+const modalContainer = document.querySelector(".modal-container");
+
+btnExp.addEventListener("click", function() {
+    modalContainer.style.display = "block";
+});
+
+btnClose.addEventListener("click", function() {
+    modalContainer.style.display = "none";
+});
+

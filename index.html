@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" type="text/css">
     <!-- JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="./ressources/script.js" defer></script>
     <!-- Icones fontawesome -->
     <script src="https://kit.fontawesome.com/2fe7c14157.js" crossorigin="anonymous"></script>
     <title>Portfolio de Kevin</title>
@@ -28,6 +28,18 @@
                 <p>EN</p>
             </div>
         </header>
+        <div id="starWars">
+            <div class="a-long-time-ago">
+            For 30 years, in a galaxy far,<br> far away..
+            </div>
+            <div class="crawl">
+                <div>
+                    <h2>Bienvenue dans mon Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit, iusto minus recusandae assumenda dolorum ab corporis, aut explicabo cumque tempore laborum quidem, sit nostrum aspernatur sequi non voluptas possimus.</p>
+                    <p>Citation////</p>
+                </div>
+            </div>
+        </div>
         <section id="welcome">
             <div class="profil">
                 <div class="profil_photo">
@@ -44,34 +56,62 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam ratione adipisci voluptatem accusantium rem impedit debitis ab, cumque quis. Molestiae voluptates reiciendis, quam magnam culpa a voluptas! Expedita, voluptatibus?</p>
                 <p>Citation ?</p>
             </div>
-        </section>
-        <div id="starWars">
-            <div class="a-long-time-ago">
-            For 30 years, in a galaxy far,<br> far away..
+            <div id="informations">
+                <div id="btn-left">
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>Technologies utilisées</h2>
+                </div>
+                <div id="btn-right">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Projets en cours</h2>
+                </div>
             </div>
-            <div class="crawl">
-                <div>
-                    <h2>Bienvenue dans mon Portfolio</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit, iusto minus recusandae assumenda dolorum ab corporis, aut explicabo cumque tempore laborum quidem, sit nostrum aspernatur sequi non voluptas possimus.</p>
-                    <p>Citation////</p>
+        </section>
+    </main>
+<!-- Fenêtre modale Compétences -->
+    <div class="modal-container">
+        <div class="overlay modal-trigger">
+            <div class="modal">
+                <i class="fa-solid fa-circle-xmark close-modal"></i>
+                <div class="contentExp">
+                    <h2>Compétences</h2>
+                    <div class="itemsExp">
+                        <div>
+                            <i class="fa-brands fa-html5"></i>
+                            <h3>HTML</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <h3>CSS</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-php"></i>
+                            <h3>PHP</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-symfony"></i>
+                            <h3>Symfony</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-folder-tree"></i>
+                            <h3>SQL</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-    <section id="details">
-        <div class="button_bar">
-            <div>
-                <i class="fa-solid fa-circle-arrow-down btn-left"></i>                
-                <h2>Compétences</h2>
-            </div>
-            <div>
-                <h2>Réalisations</h2>
-                <i class="fa-solid fa-circle-arrow-down btn-right"></i>                
-            </div>
-        </div>
-    </section>
-
+    </div>
     <footer>
+        <h2>Credits :</h2>
+        <div>
+            <i class="fa-solid fa-font-awesome"></i>
+            <a href="https://fontawesome.com">fontawesome.com</a>
+        </div>
+        
     </footer>
 </body>
 </html>
