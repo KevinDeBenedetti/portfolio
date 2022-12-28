@@ -21,12 +21,13 @@
     /* Effet de scintillement */
     transition: opacity 0.5s ease-in-out;
 }
+/* Style de la partie main */
 main {
-    height: 100vh;
+    min-height: 100vh;
 }
 /* Style du header principal */
 #mainHeader {
-    height: 50px;
+    height: 80px;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
@@ -96,16 +97,12 @@ nav a:hover {
     color: #f7f7f7;
     margin-left: 10%;
 }
+/* Style du paragraphe de 300 mots */
 .fixed_content {
     color: white;
     margin-top: 10%;
 }
 /* Texte défilant */
-#starWars {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .a-long-time-ago {
     position: absolute;
     top: 30vh;
@@ -178,6 +175,47 @@ nav a:hover {
         opacity: 0;
     }
 }
+/* Partie détails */
+#details {
+    min-height: 100vh;
+    background-image: url(./img/fond-stars.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Style des 2 boutons */
+.button_bar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.button_bar div {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    opacity: 0.6;
+}
+/* Style des textes */
+.button_bar h2 {
+    text-transform: uppercase;
+}
+.button_bar div:first-child h2 {
+    margin-left: 2%;
+}
+.button_bar div:last-child h2 {
+    margin-right: 2%;
+}
+/* Style des icones */
+.fa-solid, .fa-arrow-down {
+    color: white;
+    border-radius: 50%;
+    font-size: 4rem;
+    text-shadow: 0 0 10px white;
+}
+/* Style des icones au survol */
+.fa-solid:hover, .fa-arrow-down:hover {
+    text-shadow: 0 0 30px rgba(250, 4, 255, 1);
+}
+
 /* Footer */
 footer {
     height: 50px;
