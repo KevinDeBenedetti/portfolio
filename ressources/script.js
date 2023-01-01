@@ -35,17 +35,22 @@ function animate() {
 
 animate();
 
-// Fenêtre modale
-let btnExp = document.querySelector("#btn-left");
-let btnRea = document.querySelector("#btn-right");
+// Fenêtres modales
+let btnExp = document.querySelector("#btn-exp");
+let btnRea = document.querySelector("#btn-rea");
 let btnClose = document.querySelector(".close-modal");
 
 const modalContainer = document.querySelector(".modal-container");
 
+// Afficher les technologies au click
 btnExp.addEventListener("click", function() {
     modalContainer.style.display = "block";
 });
-
+// Afficher les réalisations au click
+btnRea.addEventListener("click", function() {
+    modalContainer.style.display = "block";
+});
+// Bouton fermer la fenêtre
 btnClose.addEventListener("click", function() {
     modalContainer.style.display = "none";
 });

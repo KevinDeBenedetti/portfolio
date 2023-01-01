@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* Ajout des polices */
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 /* Taille du conteneur d'étoiles dans le body */
 #starField {
@@ -27,7 +27,7 @@ main {
 }
 /* Style du header principal */
 #mainHeader {
-    height: 80px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@ nav a:hover {
     align-items: center;
     padding-right: 8%;
 }
-.header_links img {
+.header_links a {
     padding: 0 4%;
 }
 .header_links p {
@@ -65,7 +65,7 @@ nav a:hover {
 /* Menu burger */
 /* Animation pour faire apparaître le contenu de présentation */
 #welcome {
-    width: 50%;
+    width: 60%;
     margin: 10% auto;
     /* Apparition */
     animation: text-focus-in 24s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -79,6 +79,13 @@ nav a:hover {
       filter: blur(0px);
       opacity: 1;
     }
+}
+h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+h1 > span {
+    font-weight: 200;
 }
 /* Contenu de présentation */
 .profil {
@@ -101,6 +108,15 @@ nav a:hover {
 .fixed_content {
     color: white;
     margin-top: 10%;
+}
+.fixed_content h2 {
+    font-weight: 700;
+    font-size: 2em;
+    margin: 5% 0;
+}
+.fixed_content p {
+    font-weight: 400;
+    font-size: 1em;
 }
 /* Style de la partie informations */
 #informations {
@@ -162,7 +178,7 @@ nav a:hover {
     left: 10%;
     width: 80vw;
     bottom: 0;
-    height: 50em;
+    height: 40em;
     /* cosmétique */
     color: #ffff66;    
     font-size: 64px;
@@ -254,12 +270,12 @@ nav a:hover {
 }
 /* Partie contenant les compétences techniques */
 .itemsExp {
-    margin-top: 5%;
-    width: 100%;
+    margin: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 3em;
+    align-items: center;
     justify-items: center;
 }
 .itemsExp div {
@@ -303,19 +319,44 @@ nav a:hover {
 footer {
     height: 50px;
     background-color: #ffff669c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2 {
+    font-size: 1em;
+}
+/* exp.html */
+section {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+}
+section h1 {
+    margin-top: 8%;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+section > div {
+    margin-top: 5%;
 }
 /* Desktop & Labptop */
 /* Laptop large */
-@media(max-width: 1440px) {
+/* @media(max-width: 1440px) {
 
-}
+} */
 /* Laptop */
 @media(max-width: 1024px) {
 
 }
 /* Tablet */
 @media(max-width: 768px) {
-
+    /* Position de la photo et du h1 */
+    .profil {
+        flex-direction: column;
+    }
 }
 /* Smartphone */
 @media(max-width: 650px) {
