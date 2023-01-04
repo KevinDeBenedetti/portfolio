@@ -35,7 +35,7 @@ main {
 }
 /* Style de la barre de nav */
 nav:nth-of-type(2) {
-    min-width: 40%;
+    min-width: 70%;
 }
 /* Balise englobante de nav */
 nav:nth-of-type(2) ul {
@@ -207,7 +207,7 @@ h1 > span {
 }
 #informations div {
     display: flex;
-    width: 40%;
+    width: 60%;
     margin: 2% 0;
     padding: 1%;
 }
@@ -218,14 +218,14 @@ h1 > span {
 #informations div i {
     font-size: 2em;
 }
-#informations div h2 {
+#informations div h3 {
     margin-left: 2%;
 /* Effet de soulignement progressif */
     background: linear-gradient(to top, rgba(54, 255, 4, 0.62) 0%, rgba(54, 255, 4, 0.62) 10%, transparent 10.01%) no-repeat;
     background-size: 0 100%;
     transition: background-size .8s;
 }
-#informations div h2:hover {
+#informations div h3:hover {
     /* text-decoration: underline rgba(54, 255, 4, 0.62);
     text-underline-offset: 0.4em; */
 /* Effet de soulignement progressif */

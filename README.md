@@ -1,9 +1,10 @@
 # portfolio
 ## Fonctionnalités de la force
 - [x] Défilement texte (crawl) - générique Star Wars
-- [ ] 
+- [x] Menu burger - Responsive
 - [ ] Hover sabre laser
 - [ ] 2 modes : Jedi & Obscur
+- [ ] Sabres de compétences / Changement de l'intitulité de poste (Frontend, Backend, Soft Skills, Hard Skills)
 
 ## Tailles d'écrans : 
 
