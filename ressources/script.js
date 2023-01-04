@@ -2,7 +2,7 @@
 let frameCounter = 0;
 // Nombre de frame à attendre avant d'appeler la fonction updatePositions
 // Réglage de la vitesse de l'animation 
-let maxFrameCount = 20;
+let maxFrameCount = 60;
 
 // Création des étoiles
 for(let i = 0; i < 250 ; i++) {
@@ -19,8 +19,10 @@ function updatePositions() {
     let stars = document.querySelectorAll(".star");
     for (let i = 0 ; i < stars.length ; i++) {
         let star = stars[i];
-        star.style.top = Math.random() * 100 + "%";
-        star.style.left = Math.random() * 100 + "%";
+        // star.style.top = Math.random() * 100 + "%";
+        // star.style.left = Math.random() * 100 + "%";
+        star.style.width = Math.random() * 3 + "px";
+        star.style.height = star.style.width;
     }
 }
 function animate() {
@@ -34,6 +36,14 @@ function animate() {
 }
 
 animate();
+
+// Menu burger
+let burger = document.querySelector('.menu-burger');
+let nav = document.querySelector('.menu-nav');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
 
 // Fenêtres modales
 let btnExp = document.querySelector("#btn-exp");

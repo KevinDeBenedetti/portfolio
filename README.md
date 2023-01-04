@@ -1,14 +1,19 @@
 # portfolio
+## Fonctionnalités de la force
+- [x] Défilement texte (crawl) - générique Star Wars
+- [ ] 
+- [ ] Hover sabre laser
+- [ ] 2 modes : Jedi & Obscur
 
 ## Tailles d'écrans : 
 
-[x]4k: 2560px
-[x]Laptop large : 1440px
-[x]Laptop: 1024px
-[x]Tab: 768px
-[x]Mobile large: 425px
-[x]Mobile medium: 375px
-[x]Mobile s: 320px
+- [x] 4k: 2560px
+- [x] Laptop large : 1440px
+- [x] Laptop: 1024px
+- [x] Tab: 768px
+- [x] Mobile large: 425px
+- [x] Mobile medium: 375px
+- [x] Mobile s: 320px
 
 ## Icons
 - fontawesome.com
@@ -21,3 +26,4 @@
 - PHP logo : #777CB1
 - Symfony logo : #000
 - SQL icon : #1F89C4
+
