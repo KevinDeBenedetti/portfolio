@@ -125,7 +125,6 @@ nav:nth-of-type(1) {
     text-decoration: underline #ffff669c;
     text-underline-offset: 1rem;
 }
-
 .header_links {
     min-width: 150px;
     max-width: 200px;
@@ -147,8 +146,8 @@ nav:nth-of-type(1) {
     min-width: 340px;
     /* margin: 10% auto; */
     /* Apparition */
-    animation: text-focus-in 24s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+    animation: text-focus-in 0s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+} /* 24s */
 @keyframes text-focus-in {
     0% {
       filter: blur(12px);
@@ -169,7 +168,8 @@ h1 > span {
 /* Contenu de présentation */
 .profil {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: space-around;
     align-items: center;
 }
 /* Style de la photo */
@@ -193,26 +193,38 @@ h1 > span {
     font-size: 2em;
     margin: 3% 0;
 }
+.fixed_content h2::after {
+    content: " ";
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: white;
+}
 .fixed_content p {
     font-weight: 400;
     font-size: 1em;
+    padding-bottom: 2%;
 }
 /* Style de la partie informations */
 #informations {
-    height: 20vh;
+    height: auto;
     color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
     align-items: start;
 }
 #informations div {
     display: flex;
+    justify-content: center;
     width: 60%;
     margin: 2% 0;
     padding: 1%;
+    transition: transform .8s;
 }
 #informations div:hover {
     cursor: pointer;
+    transform: scale(1.3);
     /* text-shadow: 0 0 2px #ffff66; */
 }
 #informations div i {
@@ -285,7 +297,7 @@ h1 > span {
     position: absolute;
     opacity: 0;
     animation-delay: 3s; /* Démarre l'animation après la première */
-    animation-duration: 20s; /* 20s */
+    animation-duration: 0s; /* 20s */
     animation-name: crawl;
     animation-timing-function: linear;
 }
@@ -305,7 +317,16 @@ h1 > span {
     }
 }
 /* Fenêtre modale */
-.modal-container {
+.modal-container-technologies {
+    /* Cacher la modale */
+    display: none;
+    /* Position de la modale */
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.modal-container-projects {
     /* Cacher la modale */
     display: none;
     /* Position de la modale */
@@ -436,15 +457,22 @@ section > div {
 }
 /* Desktop & Labptop */
 /* Laptop large */
-/* @media(max-width: 1440px) {
-
-} */
+@media(max-width: 1440px) {
+    main {
+        max-width: 100%;
+    }
+}
 /* Laptop */
 @media(max-width: 1024px) {
-
+    main {
+        max-width: 100%;
+    }
 }
 /* Tablet */
 @media(max-width: 768px) {
+    main {
+        max-width: 100%;
+    }
     /* Position de la photo et du h1 */
     .profil {
         flex-direction: column;
@@ -455,8 +483,28 @@ section > div {
     nav:nth-of-type(2) {
         display: none;
     }
+    /* Titre de bienvenur */
+    .fixed_content h2 {
+        font-weight: 700;
+        font-size: 1.6em;
+        margin: 3% 0;
+    }
 }
-/* Smartphone */
-@media(max-width: 650px) {
-
+/* Smartphone large */
+@media(max-width: 425px) {
+    main {
+        max-width: 100%;
+    }
+}
+/* Smartphone medium */
+@media(max-width: 375px) {
+    main {
+        max-width: 100%;
+    }
+}
+/* Smartphone s */
+@media(max-width: 320px) {
+    main {
+        max-width: 100%;
+    }
 }

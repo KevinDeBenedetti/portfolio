@@ -50,3 +50,13 @@ main {
   .close:hover {
     cursor: pointer;
   }
+
+/* Définition des variables pour les valeurs claires et sombres */
+:root {
+  --light-color: #ffffff;
+  --dark-color: #333333;
+}
+.dark-mode {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}

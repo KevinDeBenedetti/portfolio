@@ -9,3 +9,9 @@ burger.addEventListener('click', () => {
 // close.addEventListener('click', () => {
 //     nav.classList.remove('active');
 // });
+
+const toggleButton = document.getElementById('dark-mode-toggle');
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});

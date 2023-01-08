@@ -1,8 +1,8 @@
 // Initialisation du compteur de frame
-let frameCounter = 0;
+// let frameCounter = 0;
 // Nombre de frame à attendre avant d'appeler la fonction updatePositions
 // Réglage de la vitesse de l'animation 
-let maxFrameCount = 60;
+// let maxFrameCount = 60;
 
 // Création des étoiles
 for(let i = 0; i < 250 ; i++) {
@@ -25,17 +25,19 @@ function updatePositions() {
         star.style.height = star.style.width;
     }
 }
-function animate() {
-    frameCounter++;
-    if (frameCounter >= maxFrameCount) {
-        updatePositions();
-        frameCounter = 0;
-    }
-    // Fonction de JS demande au navigateur de mettre à jour l'affichage de manière synchrone
-    requestAnimationFrame(animate);
-}
+// Suppression du changement dynamique de la taille et du mouvement des étoiles
+// function animate() {
+//     frameCounter++;
+//     if (frameCounter >= maxFrameCount) {
+//         updatePositions();
+//         frameCounter = 0;
+//     }
+//     // Fonction de JS demande au navigateur de mettre à jour l'affichage de manière synchrone
+//     requestAnimationFrame(animate);
+// }
+updatePositions();
 
-animate();
+// animate();
 
 // Menu burger
 let burger = document.querySelector('.menu-burger');
@@ -48,20 +50,25 @@ burger.addEventListener('click', () => {
 // Fenêtres modales
 let btnExp = document.querySelector("#btn-exp");
 let btnRea = document.querySelector("#btn-rea");
-let btnClose = document.querySelector(".close-modal");
+let btnClose = document.querySelectorAll(".close-modal");
 
-const modalContainer = document.querySelector(".modal-container");
+const modalContainerTechnologies = document.querySelector(".modal-container-technologies");
+const modalContainerProjects = document.querySelector(".modal-container-projects");
 
 // Afficher les technologies au click
 btnExp.addEventListener("click", function() {
-    modalContainer.style.display = "block";
+    modalContainerTechnologies.style.display = "block";
 });
-// Afficher les réalisations au click
+// Afficher les projets en cours au click
 btnRea.addEventListener("click", function() {
-    modalContainer.style.display = "block";
+    modalContainerProjects.style.display = "block";
 });
 // Bouton fermer la fenêtre
-btnClose.addEventListener("click", function() {
-    modalContainer.style.display = "none";
-});
-
+// btnClose.addEventListener("click", function() {
+//     modalContainerTechnologies.style.display = "none";
+//     modalContainerProjects.style.display = "none";
+// });
+btnClose.forEach(trigger => trigger.addEventListener("click", function() {
+    modalContainerTechnologies.style.display = "none";
+    modalContainerProjects.style.display = "none";
+}));
