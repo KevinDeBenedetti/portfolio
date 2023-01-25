@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- Caroussel avec gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portfolio de Kevin</title>
 </head>
 <body id="starField">
@@ -61,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <section id="welcome">
+        <section id="welcome" class="container">
             <div class="profil">
                 <div class="profil_photo">
                     <img src="./img/PhotoCVdetoureeNB.png" alt="Photo de Moi">
@@ -164,63 +166,84 @@
         </div>
     </div>
 <!-- Section EXP -->
-    <section id="tech"> 
+    <section id="tech" class="container"> 
         <h2>Technologies utilisées</h2>
         <div class="tech-part">
             <h3>FrontEnd</h3>
             <div class="tech-part__list">
                 <div class="item--html">
                     <i class="fa-brands fa-html5"></i>
-                    <h3>HTML</h3>
+                    <h5>HTML</h5>
+                </div>
+                <div class="item--css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h5>CSS</h5>
+                </div>
+                <div class="item--javascript">
+                    <i class="fa-brands fa-js"></i>
+                    <h5>JavaScript</h5>
                 </div>
             </div>
             <h4>Frameworks</h4>
             <div class="tech-part__list">
                 <div class="item--tailwind">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3>Tailwind</h3>
+                    <img src="./img/tailwindcss-icon.svg" alt="Logo Tailwind">
+                    <h5>Tailwind</h5>
                 </div>
+                <div class="item--bootstrap">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h5>Bootstrap</h5>
+                </div>
+                
             </div>
         </div>
         <div class="tech-part">
             <h3>BackEnd</h3>
+            <div class="tech-part__list">
+                <div class="item--php">
+                    <i class="fa-brands fa-php"></i>
+                    <h5>PHP</h5>
+                </div>
+                <div class="item--sql">
+                    <i class="fa-solid fa-folder-tree"></i>
+                    <h5>SQL</h5>
+                </div>
+            </div>
             <h4>Frameworks</h4>
-        </div>
+            <div class="tech-part__list">
+                <div class="item--symfony">
+                    <i class="fa-brands fa-symfony"></i>
+                    <h5>Symfony</h5>
+                </div>
+            </div>
 
-        <div class="exp-tech__list">
-            <div class="item-html">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML</h3>
-            </div>
-            <div>
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS</h3>
-            </div>
-            <div>
-                <i class="fa-brands fa-js"></i>
-                <h3>JavaScript</h3>
-            </div>
-            <div>
-                <i class="fa-brands fa-php"></i>
-                <h3>PHP</h3>
-            </div>
-            <div>
-                <i class="fa-brands fa-symfony"></i>
-                <h3>Symfony</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-folder-tree"></i>
-                <h3>SQL</h3>
-            </div>
         </div>
     </section>
 <!-- Section EXP -->
     <section id="projects"> 
         <h2>Réalisations<h2>
+            <div class="group">
+                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80)">
+                    <p>Projet 1</p>
+                    <button>Plus d'informations</button>
+                </div>
+                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
+                    <p>Projet 2</p>
+                    <button>Plus d'informations</button></div>
+                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
+                    <p>Projet 3</p>
+                    <button>Plus d'informations</button>
+                </div>
+                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1609554496796-c345a5335ceb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
+                    <p>Projet 4</p>
+                    <button>Plus d'informations</button>
+                </div>
+            </div>
     </section>
 <!-- Section EXP -->
     <section id="contact"> 
             <h2>Contact</h2>
+
             <a href="#home" class="btn-home"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </section>
     <footer>

@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
+.container {
+    max-width: 800px;
+    min-width: 340px;
+    margin: 0 auto;
+}
 /* Taille du conteneur d'étoiles dans le body */
 #starField {
     height: 100%;
@@ -148,9 +153,6 @@ nav:nth-of-type(1) {
 /* Menu burger */
 /* Animation pour faire apparaître le contenu de présentation */
 #welcome {
-    max-width: 800px;
-    min-width: 340px;
-    margin: 0 auto;
     padding-top: 6%;
     /* Apparition */
     animation: text-focus-in 24s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -418,44 +420,109 @@ section > h2 {
     font-size: 3rem;
     text-align: center;
     padding-top: 6%;
+    padding-bottom: 4%;
 }
 .btn-home {
     color: white;
     font-size: 4rem;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10%;
+    right: 10%;
 }
 /* Section EXP */
 #tech {
     height: 100vh;
+    width: ;
+    margin: 0 auto;
 }
-.exp-tech__list {
-    height: 40%;
-    width: 100%;
+.tech-part {
+    color: white;
+}
+.tech-part > h3 {
+    margin: 2% 0;
+}
+.tech-part > h4 {
+    margin: 1% 0;
+}
+.tech-part__list {
     display: flex;
+    justify-content: start;
+    gap: 4%;
+    padding-left: 6%;
+}
+.tech-part__list div {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 4% 0;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4%;
 }
-.exp-tech__list div {
-    width: 6rem;
-    height: 6rem;
-}
-.exp-tech__list div > h3 {
+.tech-part__list div > h3 {
     color: white;
 }
-.exp-tech__list div > i {
-    color: white;
+.tech-part__list div > i {
+    font-size: 3rem;
+}
+
+.item--html i {
+    color: #f06529;
+}
+.item--css i {
+    color: #2952DE;
+}
+.item--javascript i {
+    color: #F6DC3A
+}
+.item--bootstrap i {
+    color: #563d7c;
+}
+.item--php i {
+    color: #484C89;
+}
+.item--sql i {
+    color: #F29111;
+}
+.item--symfony i {
+    color: black;
 }
 /* Section projects */
 #projects {
     height: 100vh;
-    background-color: #1F89C4;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Carroussel */
+.group {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+}
+  
+.item {
+    width: 15vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 1vw;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
 }
 /* Section contact */
 #contact {
     height: 100vh;
-    background-color: #F6DC3A;
+    background-color: #000000;
     position: relative;
 }
 /* Footer */
@@ -511,3 +578,5 @@ section > div {
 @media(max-width: 650px) {
 
 }
+
+
