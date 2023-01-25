@@ -28,10 +28,15 @@ main {
 /* Style du header principal */
 #mainHeader {
     height: 50px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
     padding: 0 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 /* Style de la barre de nav */
 nav:nth-of-type(2) {
@@ -145,7 +150,8 @@ nav:nth-of-type(1) {
 #welcome {
     max-width: 800px;
     min-width: 340px;
-    /* margin: 10% auto; */
+    margin: 0 auto;
+    padding-top: 6%;
     /* Apparition */
     animation: text-focus-in 24s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -202,7 +208,6 @@ h1 > span {
     height: 20vh;
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: start;
 }
 #informations div {
@@ -407,6 +412,52 @@ h1 > span {
 .itemsExp div:nth-of-type(6) i {
     color: #1F89C4;
 }
+/* Styles communs aux sections */
+section > h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 6%;
+}
+.btn-home {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Section EXP */
+#tech {
+    height: 100vh;
+}
+.exp-tech__list {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4% 0;
+}
+.exp-tech__list div {
+    width: 6rem;
+    height: 6rem;
+}
+.exp-tech__list div > h3 {
+    color: white;
+}
+.exp-tech__list div > i {
+    color: white;
+}
+/* Section projects */
+#projects {
+    height: 100vh;
+    background-color: #1F89C4;
+}
+/* Section contact */
+#contact {
+    height: 100vh;
+    background-color: #F6DC3A;
+    position: relative;
+}
 /* Footer */
 footer {
     height: 50px;
@@ -420,7 +471,7 @@ footer h2 {
     font-size: 1em;
 }
 /* exp.html */
-section {
+/* section {
     width: 60%;
     margin: 0 auto;
     color: white;
@@ -433,7 +484,7 @@ section > h1 {
 }
 section > div {
     margin-top: 5%;
-}
+} */
 /* Desktop & Labptop */
 /* Laptop large */
 /* @media(max-width: 1440px) {
