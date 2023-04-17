@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./main.css" type="text/css">
     
     <!-- JavaScript -->
-    <script src="./ressources/script.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
     
     <!-- Icones fontawesome -->
     <script src="https://kit.fontawesome.com/2fe7c14157.js" crossorigin="anonymous"></script>
@@ -245,25 +245,50 @@
         </div>
     </section>
 
-    <!-- Section EXP -->
+    <!-- Section projects -->
     <section id="projects"> 
         <h2>Réalisations<h2>
             <div class="group">
-                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80)">
-                    <p>Projet 1</p>
-                    <button>Plus d'informations</button>
+
+                <div class="item" style="background-image: url(./img/php.jpg)">
+                    <p>PHP</p>
+                    <button class="modal-trigger" data-model="modal__php">Voir plus</button>
                 </div>
-                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
-                    <p>Projet 2</p>
-                    <button>Plus d'informations</button></div>
-                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
-                    <p>Projet 3</p>
-                    <button>Plus d'informations</button>
+
+                <div id="modal__php" class="modal">
+                    <div class="modal-content">
+                        <h2>Mes réalisations avec PHP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate unde fugit aliquam sit autem! Fugiat, quaerat consequatur a consectetur, neque aperiam, velit fuga esse suscipit placeat iste obcaecati facilis modi.</p>
+                        <button id="modal-close">Fermer</button>
+                    </div>
                 </div>
-                <div class="item" style="background-image: url(https://images.unsplash.com/photo-1609554496796-c345a5335ceb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
-                    <p>Projet 4</p>
-                    <button>Plus d'informations</button>
+
+                <div class="item" style="background-image: url(./img/vuejs.jpg)">
+                    <p>Vue JS</p>
+                    <button class="modal-trigger" data-model="modal__vuejs">Voir plus</button>
                 </div>
+
+                <div id="modal__vuejs" class="modal">
+                    <div class="modal-content">
+                        <h2>Mes réalisations avec PHP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate unde fugit aliquam sit autem! Fugiat, quaerat consequatur a consectetur, neque aperiam, velit fuga esse suscipit placeat iste obcaecati facilis modi.</p>
+                        <button id="modal-close">Fermer</button>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(./img/domaine-des-cigales.png)">
+                    <p>Wordpress</p>
+                    <button class="modal-trigger" data-model="modal__wordpress">Voir plus</button>
+                </div>
+
+                <div id="modal__wordpress" class="modal">
+                    <div class="modal-content">
+                        <h2>Mes réalisations avec PHP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate unde fugit aliquam sit autem! Fugiat, quaerat consequatur a consectetur, neque aperiam, velit fuga esse suscipit placeat iste obcaecati facilis modi.</p>
+                        <button id="modal-close">Fermer</button>
+                    </div>
+                </div>
+
             </div>
     </section>
 
@@ -280,6 +305,13 @@
         <div>
             <i class="fa-solid fa-font-awesome"></i>
             <a href="https://fontawesome.com">fontawesome.com</a>
+        </div>
+
+        <div>
+            <h4>Images</h4>
+            <a href="https://unsplash.com/fr/photos/Bj6ENZDMSDY">PHP</a>
+            <a href="https://unsplash.com/fr/photos/jafl5owXXVc">Vue JS</a>
+            <a href="https://unsplash.com/fr/photos/Zk--Ydz2IAs">Wordpress</a>
         </div>
     </footer>
 </body>

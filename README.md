@@ -14,6 +14,7 @@
 
 ## Technical specifications
 - [x] Using css variables
+- [x] BEM naming convention
 - [x] Style decomposition (folders and css files)
 
 ## Animations
