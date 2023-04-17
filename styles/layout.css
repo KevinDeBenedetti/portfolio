@@ -1,0 +1,167 @@
+.container {
+    max-width: 800px;
+    min-width: 340px;
+    margin: 0 auto;
+}
+
+/* Taille du conteneur d'étoiles dans le body */
+#starField {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* Style des étoiles */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 0 10px white;
+    width: 2px;
+    height: 2px;
+    /* Effet de scintillement */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Style de la partie main */
+main {
+    min-height: 100vh;
+}
+
+/* Style du header principal */
+#mainHeader {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style de la barre de nav */
+nav:nth-of-type(2) {
+    min-width: 70%;
+}
+
+/* Balise englobante de nav */
+nav:nth-of-type(2) ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 8%;
+}
+
+/* Chaque puce de la liste NO */
+nav:nth-of-type(2) ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 25%;
+    padding: 0 4%;
+}
+
+/* Liens */
+nav:nth-of-type(2) ul a {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav:nth-of-type(2) li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav:nth-of-type(2) a:hover {
+    text-decoration: underline #ffff669c;
+    text-underline-offset: 1rem;
+}
+
+/* Menu burger */
+nav:nth-of-type(1) {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-burger {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-burger-lines {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.menu-nav {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-nav.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.menu-nav a {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.menu-nav li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-nav a:hover {
+    text-decoration: underline #ffff669c;
+    text-underline-offset: 1rem;
+}
+
+.header_links {
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_links a {
+    padding: 0 4%;
+}
+
+.header_links p {
+    color: white;
+    padding: 0 4%;
+}

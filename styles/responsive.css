@@ -1,0 +1,21 @@
+/* Laptop */
+@media(max-width: 1024px) {
+
+}
+/* Tablet */
+@media(max-width: 768px) {
+    /* Position de la photo et du h1 */
+    .profil {
+        flex-direction: column;
+    }
+    .menu-burger {
+        visibility: visible;
+    }
+    nav:nth-of-type(2) {
+        display: none;
+    }
+}
+/* Smartphone */
+@media(max-width: 650px) {
+
+}
