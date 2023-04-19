@@ -12,9 +12,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./main.css" type="text/css">
     
-    <!-- JavaScript -->
-    <script type="module" src="./script.js" defer></script>
-    
     <!-- Icones fontawesome -->
     <script src="https://kit.fontawesome.com/2fe7c14157.js" crossorigin="anonymous"></script>
     
@@ -23,8 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
     
-    <!-- Caroussel avec gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     
     <title>Portfolio de Kevin</title>
 
@@ -44,10 +40,10 @@
                     <div class="menu-burger-lines"></div>
                 </div>
                 <ul class="menu-nav">
-                    <li><a href="./index.html">Accueil</a></li>
-                    <li><a href="./exp.html">Compétences</a></li>
-                    <li><a href="./projects.html">Réalisations</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#tech">Compétences</a></li>
+                    <li><a href="#projects">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -252,40 +248,38 @@
 
                 <div class="item" style="background-image: url(./img/php.jpg)">
                     <p>PHP</p>
-                    <button class="modal-trigger" data-model="modal__php">Voir plus</button>
+                    <button class="modal-trigger" data-modal="modal__php">Voir plus</button>
                 </div>
 
                 <div id="modal__php" class="modal">
                     <div class="modal-content">
                         <h2>Mes réalisations avec PHP</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate unde fugit aliquam sit autem! Fugiat, quaerat consequatur a consectetur, neque aperiam, velit fuga esse suscipit placeat iste obcaecati facilis modi.</p>
-                        <button id="modal-close">Fermer</button>
+                        <button class="modal-close">Fermer</button>
                     </div>
                 </div>
 
                 <div class="item" style="background-image: url(./img/vuejs.jpg)">
                     <p>Vue JS</p>
-                    <button class="modal-trigger" data-model="modal__vuejs">Voir plus</button>
+                    <button class="modal-trigger" data-modal="modal__vuejs">Voir plus</button>
                 </div>
 
                 <div id="modal__vuejs" class="modal">
                     <div class="modal-content">
-                        <h2>Mes réalisations avec PHP</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate unde fugit aliquam sit autem! Fugiat, quaerat consequatur a consectetur, neque aperiam, velit fuga esse suscipit placeat iste obcaecati facilis modi.</p>
-                        <button id="modal-close">Fermer</button>
+                        <h2>Mes réalisations avec Vue JS</h2>
+                        <button class="modal-close">Fermer</button>
                     </div>
                 </div>
 
                 <div class="item" style="background-image: url(./img/domaine-des-cigales.png)">
                     <p>Wordpress</p>
-                    <button class="modal-trigger" data-model="modal__wordpress">Voir plus</button>
+                    <button class="modal-trigger" data-modal="modal__wordpress">Voir plus</button>
                 </div>
 
                 <div id="modal__wordpress" class="modal">
                     <div class="modal-content">
-                        <h2>Mes réalisations avec PHP</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate unde fugit aliquam sit autem! Fugiat, quaerat consequatur a consectetur, neque aperiam, velit fuga esse suscipit placeat iste obcaecati facilis modi.</p>
-                        <button id="modal-close">Fermer</button>
+                        <h2>Mes réalisations avec Wordpress</h2>
+
+                        <button class="modal-close" id="modal-close__wordpress">Fermer</button>
                     </div>
                 </div>
 
@@ -314,5 +308,12 @@
             <a href="https://unsplash.com/fr/photos/Zk--Ydz2IAs">Wordpress</a>
         </div>
     </footer>
+
+    <!-- Caroussel avec gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript -->
+    <script type="module" src="./script.js"></script>
+
 </body>
 </html>

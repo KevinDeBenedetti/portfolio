@@ -1,0 +1,21 @@
+/* Section contact */
+#contact {
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    background-color: #ffff669c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 1em;
+}
+

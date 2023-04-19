@@ -1,0 +1,109 @@
+/* Partie contenant les compétences techniques */
+.itemsExp {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+    align-items: center;
+    justify-items: center;
+}
+.itemsExp div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 140px;
+    width: 140px;
+    border-radius: 2px;
+}
+/* Noms des technologies */
+.itemsExp h3 {
+    margin-top: 8%;
+    color: #000;
+}
+/* Taille des icones */
+.itemsExp i {
+    font-size: 4em;
+}
+.itemsExp div:nth-of-type(1) i {
+    color: #E24E30;
+}
+.itemsExp div:nth-of-type(2) i {
+    color: #2952DE;
+}
+.itemsExp div:nth-of-type(3) i {
+    color: #F6DC3A;
+}
+.itemsExp div:nth-of-type(4) i {
+    color: #777CB1;
+}
+.itemsExp div:nth-of-type(5) i {
+    color: #000;
+}
+.itemsExp div:nth-of-type(6) i {
+    color: #1F89C4;
+}
+
+/* Section EXP */
+#tech {
+    height: 100vh;
+    width: ;
+    margin: 0 auto;
+}
+
+.tech-part {
+    color: white;
+}
+.tech-part > h3 {
+    margin: 2% 0;
+}
+.tech-part > h4 {
+    margin: 1% 0;
+}
+.tech-part__list {
+    display: flex;
+    justify-content: start;
+    gap: 4%;
+    padding-left: 6%;
+}
+.tech-part__list div {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4%;
+}
+.tech-part__list div > h3 {
+    color: white;
+}
+.tech-part__list div > i {
+    font-size: 3rem;
+}
+
+.item--html i {
+    color: #f06529;
+}
+.item--css i {
+    color: #2952DE;
+}
+.item--javascript i {
+    color: #F6DC3A
+}
+.item--bootstrap i {
+    color: #563d7c;
+}
+.item--php i {
+    color: #484C89;
+}
+.item--sql i {
+    color: #F29111;
+}
+.item--symfony i {
+    color: black;
+}
+
