@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
     
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
     
     <title>Portfolio de Kevin</title>
@@ -288,9 +290,23 @@
 
     <!-- Section EXP -->
     <section id="contact"> 
+        
             <h2>Contact</h2>
 
+            <div id="map"></div>
+
+            <div class="terminal" onmouseover="terminal()">
+                <div class="terminal__content">
+                    <div id="dateOfTheDay"></div>
+                    <div>~</div><div id="linkedin"></div>
+                    <p>~</p><p id="email"></p>
+                    <p>~</p><p id="twitter"></p>
+                    <p>~</p>
+                </div>
+            </div>
+
             <a href="#home" class="btn-home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
     </section>
 
     <!-- Footer -->
@@ -311,6 +327,9 @@
 
     <!-- Caroussel avec gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <!-- JavaScript -->
     <script type="module" src="./script.js"></script>
