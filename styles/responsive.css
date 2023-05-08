@@ -1,21 +1,34 @@
+/* Laptop large */
+@media(max-width: 1440px) {
+
+}
+
 /* Laptop */
 @media(max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #sidebar-nav {
+        display: none;
+    }
+
+    #content {
+        overflow-y: visible;
+    }
 
 }
 /* Tablet */
 @media(max-width: 768px) {
-    /* Position de la photo et du h1 */
-    .profil {
-        flex-direction: column;
-    }
-    .menu-burger {
-        visibility: visible;
-    }
-    nav:nth-of-type(2) {
-        display: none;
-    }
+
 }
 /* Smartphone */
-@media(max-width: 650px) {
+@media(max-width: 425px) {
 
 }

@@ -1,4 +1,14 @@
 :root {
     --light-grey: #f7f7f7;
+    --bg-main: #333;
     --bg-modal: rgba(0, 0, 0, 0.6);
+
+    --text-white: white;
+    --text-grey_light: rgb(148, 148, 149);
+    --text-yellow: yellow;
+
+
+
+    --bg-main: #0E0F13FF;
+    --bg-article: rgba(32, 32, 34, 0.8);
 }

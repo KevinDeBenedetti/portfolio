@@ -1,0 +1,103 @@
+#content {
+    /* flex-grow: 1; */
+    overflow-y: scroll;
+    padding: 24px;
+}
+
+h3 {
+    display: none;
+}
+
+.article-container {
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.article-item {
+    padding: 40px;
+    background-color: var(--bg-article);
+    margin: 8px 0;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-item > p:nth-of-type(1) {
+    color: var(--text-white);
+    text-transform: uppercase;
+}
+
+.article-item > p:nth-of-type(2) {
+    margin-top: 8px;
+    color: var(--text-grey_light);
+}
+
+h4 {
+    color: var(--text-white);
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.article-item__links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.article-item__links a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--text-grey_light);
+    display: flex;
+    align-items: center;
+}
+
+.article-item__links a > p {
+    margin-left: 6px;
+}
+
+.scrolling-text_container {
+    width: auto;
+    height: 50px;
+    border: 1px solid var(--text-grey_light);
+    /* background-color: var(--light-grey); */
+    overflow: hidden; /* Cacher le contenu dépassant la div */
+    position: relative;
+}
+
+.scrolling-content {
+    text-transform: uppercase;
+    font-size: 22px;
+    display: flex;
+
+    white-space: nowrap; /* Garder le texte sur une seule ligne */
+    position: absolute;
+    left: 0; /* Position initiale à droite de la div */
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-white);
+    animation: scroll 15s linear infinite; /* Animation de défilement */
+}
+
+.scrolling-content > p {
+    padding: 0 10px;
+}
+
+@keyframes scroll {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+
+
+
+
+
