@@ -60,42 +60,6 @@ h4 {
     margin-left: 6px;
 }
 
-.scrolling-text_container {
-    width: auto;
-    height: 50px;
-    border: 1px solid var(--text-grey_light);
-    /* background-color: var(--light-grey); */
-    overflow: hidden; /* Cacher le contenu dépassant la div */
-    position: relative;
-}
-
-.scrolling-content {
-    text-transform: uppercase;
-    font-size: 22px;
-    display: flex;
-
-    white-space: nowrap; /* Garder le texte sur une seule ligne */
-    position: absolute;
-    left: 0; /* Position initiale à droite de la div */
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-white);
-    animation: scroll 15s linear infinite; /* Animation de défilement */
-}
-
-.scrolling-content > p {
-    padding: 0 10px;
-}
-
-@keyframes scroll {
-    0% {
-        left: 100%;
-    }
-    100% {
-        left: -100%;
-    }
-}
-
 
 
 
