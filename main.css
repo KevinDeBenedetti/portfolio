@@ -4,15 +4,15 @@
 
 @import "./styles/variables.css";
 
-@import "./styles/home.css";
-
 @import "./styles/modals.css";
+
+@import "./styles/sidebar.css";
+
+@import "./styles/content.css";
 
 @import "./styles/skills.css";
 
-@import "./styles/projects.css";
-
-@import "./styles/contact.css";
+@import "./styles/loading.css";
 
 @import "./styles/responsive.css";
 
