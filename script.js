@@ -66,3 +66,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Inversements des lettres des titres
+window.reverseText = function(element) {
+  let originalText = element.innerText;
+  let newText = '';
+  for(let i = 0; i < originalText.length; i++) {
+    if(i % 2 !== 0) {
+      newText = newText.slice(0, i - 1) + originalText[i] + originalText[i - 1] + newText.slice(i + 1);
+    }
+  }
+  element.innerText = newText;
+}
+
+window.normalText = function(element) {
+  let newText = element.innerText;
+  let originalText = '';
+  for(let i = 0; i < newText.length; i++) {
+    if(i % 2 !== 0) {
+      originalText = originalText.slice(0, i - 1) + newText[i] + newText[i - 1] + originalText.slice(i + 1);
+    }
+  }
+  element.innerText = originalText;
+}
+
+
+

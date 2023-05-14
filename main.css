@@ -4,24 +4,14 @@
 
 @import "./styles/variables.css";
 
-@import "./styles/modals.css";
-
 @import "./styles/sidebar.css";
 
 @import "./styles/content.css";
 
 @import "./styles/skills.css";
 
-@import "./styles/loading.css";
+@import "./styles/loading-titles.css";
+
+@import "./styles/documentations.css";
 
 @import "./styles/responsive.css";
-
-
-
-
-
-
-
-
-
-
