@@ -2,10 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Oswald', Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto Mono', Arial, sans-serif;
 }
-
-/* Début des test */
 
 body {
     display: flex;
@@ -15,4 +13,32 @@ body {
 .container {
     display: flex;
     height: 100vh;
+}
+
+#sticky-header {
+    position: sticky;
+    height: 6vh;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10; 
+    opacity: 0; /* rendre invisible par défaut */
+    /* transition: opacity 0.3s; transition douce lors du changement de visibilité */
+    transform: translateY(-100%); /* déplace le texte en dehors du haut de l'élément */
+    transition: opacity 0.3s, transform 0.5s; /* ajouter une transition sur transform */
+   
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+  
+#sticky-header.visible {
+    opacity: 1; /* rendre visible quand la classe "visible" est présente */
+    transform: translateY(0); 
+    /* déplace le texte à sa position originale */
+
+}
+
+h3 {
+    display: none;
 }

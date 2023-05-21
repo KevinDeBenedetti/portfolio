@@ -18,8 +18,8 @@
         <!-- Fonts Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+
         <!-- Leaflet -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
@@ -42,34 +42,30 @@
                     <p>Je suis passionné par le développement web et j'ai récemment décidé de me reconvertir dans ce domaine après avoir travaillé pendant plusieurs années dans le commerce. Je suis une formation intensive pour acquérir les compétences nécessaires en matière de développement front-end, back-end et en design.</p>
                     
                     <p>Je suis capable de créer des sites web performants et esthétiquement agréables, tout en veillant à ce qu'ils soient optimisés pour le référencement naturel (SEO).</p>       
-
+<!-- Barre de nav -->
                     <nav id="sidebar-nav">
                         <ul>
-
                             <li>
-
                                 <a href="#realisations" class="nav-item">
-
                                     <span>01</span>
-
                                     <div class="bar"></div>
-
                                     <p>Réalisations</p>
-                                    
                                 </a>
-
                             </li>
-
                             <li>
                                 <a href="#skills" class="nav-item">
-
                                     <span>02</span>
-
                                     <div class="bar"></div>
-
                                     <p>Compétences</p>
-                                    
-                                </a>                            </li>
+                                </a>                            
+                            </li>
+                            <li>
+                                <a href="#contact" class="nav-item">
+                                    <span>03</span>
+                                    <div class="bar"></div>
+                                    <p>contact</p>
+                                </a>                            
+                            </li>
                         </ul>
                     </nav>
 
@@ -102,49 +98,82 @@
                 </div>
 
             </aside>
-    
+
             <main id="content">
+                <div id="sticky-header"></div>
 
+<!-- Section Réalisations -->
                 <section id="realisations">
-
                     <h3>Réalisations</h3>
-
-                    <div class="h3-dummy"></div>
-
+                    <div class="observe-point"></div>
 
                     <div class="article-container">
 
-                    <article class="article-item">            
-                            <p>Php</p>
+                        <article class="article-item">
+                            <div class="tags">
+                                <div class="tag">PHP</div>
+                                <div class="tag">JavaScript</div>
+                                <div class="tag">CSS</div>
+                                <div class="tag">HTML</div>
+                                <div class="tag">MySQL</div>
+                                <div class="tag">MVC</div>
+                            </div>            
+                                <h4>Wikicats</h4>
 
-                            <h4>Wikicats</h4>
+                                <p>Un site développé en php (sans framework back) dans le cadre de l'obtention du titre professionnel de développeur web et web mobile</p>
 
-                            <p>Un site développé en php (sans framework back) dans le cadre de l'obtention du titre professionnel de développeur web et web mobile</p>
+                                <div class="article-item__links">
 
+                                    <a href="https://github.com/KevinDeBenedetti/Wikicats" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github fa-sm"></i>
+                                        <p>Repository</p>
+                                    </a>
+
+                                    <a href="https://wikicats.web-agency.go.yo.fr/index.php" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github fa-sm"></i>
+                                        <p>Website</p>
+                                    </a>
+
+                                </div>
+                        </article>
+
+                        <article class="article-item">
+                            <div class="tags">
+                                <div class="tag">Wordpress</div>
+                                <div class="tag">CSS</div>
+                                <div class="tag">Figma</div>
+                            </div>            
+                                <h4>Le domaine des Cigales</h4>
+
+                                <p>Un site conçu avec wordpress comme CMS et Figma pour le design, dans le cadre d'un appel à projet durant la formation de développeur web et web mobile.</p>
+                                
                             <div class="article-item__links">
 
-                                <a href="https://github.com/KevinDeBenedetti/Wikicats" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-github fa-sm"></i>
-                                    <p>Repository</p>
-                                </a>
+                                    <a href="https://domaine-des-cigales.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github fa-sm"></i>
+                                        <p>Website</p>
+                                    </a>
 
-                                <a href="https://wikicats.web-agency.go.yo.fr/index.php" target="_blank" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-github fa-sm"></i>
-                                    <p>Website</p>
-                                </a>
+                                </div>
 
-                            </div>
-                    </article>
+                        </article>
 
-                    <article class="article-item">            
- 
-                            <p>Wordpress</p>
-
-                            <h4>Le domaine des Cigales</h4>
-
-                            <p>Un site conçu avec wordpress comme CMS et Figma pour le design, dans le cadre d'un appel à projet durant la formation de développeur web et web mobile.</p>
+                        <article class="article-item">     
                             
-                          <div class="article-item__links">
+                            <div class="tags">
+                                <div class="tag">Vue 3</div>
+                                <div class="tag">Tailwind</div>
+                                <div class="tag">express</div>
+                                <div class="tag">Firebase</div>
+                                <div class="tag">NoSQL</div>
+                                <div class="tag">Figma</div>
+                            </div> 
+
+                            <h4>Agoractu</h4>
+
+                            <p>Un site web développé entièrement avec des frameworks JavaScript, VueJS pour le front, ExpressJS pour le back et une base données NoSQL.</p>
+                            
+                            <div class="article-item__links">
 
                                 <a href="https://domaine-des-cigales.com/" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-brands fa-github fa-sm"></i>
@@ -153,155 +182,212 @@
 
                             </div>
 
-                    </article>
+                        </article>
 
-                    <article class="article-item">            
+                    </div>
 
-                        <p>JavaScript - Vue JS & Express JS</p>
+                </section>
 
-                        <h4>Agoractu</h4>
+<!-- Section Skills -->
+                <section id="skills">
+                    <h3>Compétences</h3>
+                    <div class="observe-point"></div>
 
-                        <p>Un site web développé entièrement avec des frameworks JavaScript, VueJS pour le front, ExpressJS pour le back et une base données NoSQL.</p>
-                        
-                        <div class="article-item__links">
+                    <div class="skills-content">
+                        <h4>Frontend</h4>
 
-                            <a href="https://domaine-des-cigales.com/" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github fa-sm"></i>
-                                <p>Website</p>
+                        <div class="skills-container">
+    
+                            <a class="skills-item item-html" href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                                </div>
+    
+                                <h5 class="skills-title">HTML</h5>
                             </a>
-
+    
+                            <a class="skills-item item-css" href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                                </div>
+    
+                                <h5 class="skills-title">CSS</h5>
+                            </a>
+                            
+                            <a class="skills-item item-javascript" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-square-js fa-2xl"></i> 
+                                </div>
+    
+                                <h5 class="skills-title">JavaScript</h5>
+                            </a>
+    
+                            <a class="skills-item item-vue" href="https://vuejs.org/" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-vuejs"></i>
+                                </div>
+    
+                                <h5 class="skills-title">Vue 3</h5>
+                            </a>
+    
+                            <a class="skills-item item-tailwind" href="https://tailwindcss.com/" target="_blank">
+                                <div class="icon-container">
+                                    <img src="./img/logos/tailwind.png" alt="Logo tailwind">
+                                </div>
+    
+                                <h5 class="skills-title">Tailwind</h5>
+                            </a>
+    
+                            <a class="skills-item item-bootstrap" href="https://getbootstrap.com/" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                                </div>
+                                <h5 class="skills-title">Bootstrap</h5>
+                            </a>
+    
+                            <a class="skills-item item-markdown" href="https://www.markdownguide.org/getting-started/" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-markdown fa-2xl"></i>  
+                                </div>
+                              
+                                <h5 class="skills-title">Markdown</h5>
+                            </a>
+    
                         </div>
-
-                    </article>
-
+    
+                        <h4>Backend</h4>
+    
+                        <div class="skills-container">
+    
+                            <a class="skills-item item-php" href="https://www.php.net/manual/fr/intro-whatis.php" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-php fa-2xl"></i>
+                                </div>
+    
+                                <h5 class="skills-title">PHP</h5>
+                            </a>
+    
+                            <a class="skills-item item-node" href="https://nodejs.org/en" target="_blank">
+    
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-node fa-2xl"></i>
+                                </div>
+                                <h5 class="skills-title">Node JS</h5>
+                            </a>
+    
+                            <a class="skills-item item-express" href="https://expressjs.com/fr/" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-node-js fa-2xl"></i>
+                                </div>
+                                <h5 class="skills-title">Express JS</h5>
+                            </a>
+    
+                        </div>
+                        
+                        <h4>CMS</h4>
+    
+                        <div class="skills-container">
+    
+                            <a class="skills-item item-wordpress" href="https://developer.wordpress.org/rest-api/key-concepts/" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-wordpress fa-2xl"></i>
+                                </div>
+                                <h5 class="skills-title">Wordpress</h5>
+                            </a>
+    
+                        </div>
+    
+                        <h4>Database</h4>
+    
+                        <div class="skills-container">
+    
+                            <a class="skills-item item-mysql" href="https://www.mysql.com/fr/" target="_blank">
+                                <div class="icon-container">
+                                    <img src="./img/logos/mysql.png" alt="Logo MySQL">
+                                </div>
+                                <h5 class="skills-title">MySQL</h5>
+                            </a>
+    
+                            <a class="skills-item item-nosql" href="https://docs.oracle.com/en/database/other-databases/nosql-database/index.html" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-database fa-2xl"></i>
+                                </div>
+                                <h5 class="skills-title">NoSQL</h5>
+                            </a>
+    
+                            <a class="skills-item item-firebase" href="https://firebase.google.com/" target="_blank">
+                                <div class="icon-container">
+                                    <img src="./img/logos/firebase.png" alt="">
+    
+                                </div>
+                                <h5 class="skills-title">Firebase</h5>
+                            </a>
+                        </div>
+    
+                        <h4>Design</h4>
+    
+                        <div class="skills-container">
+    
+                            <a class="skills-item item-figma" href="https://www.figma.com/fr/design/" target="_blank">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-figma fa-2xl"></i>
+                                </div>
+                                <h5 class="skills-title">Figma</h5>
+                            </a>
+    
+                            <a class="skills-item item-photoshop" href="https://www.adobe.com/fr/products/photoshop.html" target="_blank">
+                                <div class="icon-container">
+                                    <img src="./img/logos/photoshop.png" alt="Logo photoshop">
+                                </div>
+                                <h5 class="skills-title">Photoshop</h5>
+                            </a>
+    
+                            <a class="skills-item item-illustrator" href="https://www.adobe.com/fr/products/illustrator.html" target="_blank">
+                                <div class="icon-container">
+                                    <img src="./img/logos/illustrator.png" alt="Logo Illustrator">
+                                </div>
+                                <h5 class="skills-title">Illustrator</h5>
+                            </a>
+    
+                            <div class="skills-item item-indesign" href="https://www.adobe.com/fr/products/indesign.html" target="_blank">
+                                <div class="icon-container">
+                                    <img src="./img/logos/indesign.png" alt="Logo InDesign">
+                                </div>
+                                <h5 class="skills-title">InDesign</h5>
+                            </div>
+                        </div>
                     </div>
 
                 </section>
                 
-                <section id="skills">
-
-                    <h3>Compétences</h3>
-                    <div class="h3-dummy"></div>
-
-                    <div class="loading">
-                        <div class="loading-element el1">F</div>
-                        <div class="loading-element el2">R</div>
-                        <div class="loading-element el3">O</div>
-                        <div class="loading-element e4">N</div>
-                        <div class="loading-element el5">T</div>
-                        <div class="loading-element el6">E</div>
-                        <div class="loading-element el7">N</div>
-                        <div class="loading-element el8">D</div>
-                    </div>
-
-                    <div class="skills-container">
-                        <div class="skills-item item-html">
-                            <img src="./img/logos/html.png" alt="html 5 logo">
-                            <h5>HTML</h5>
-                        </div>
-                        <div class="skills-item item-css">
-                            <img src="./img/logos/css-3.png" alt="css 3 logo">
-                            <h5>CSS 3</h5>
-                        </div>
-                        <div class="skills-item item-js">
-                            <img src="./img/logos/javascript.png" alt="">                            
-                            <h5>JavaScript</h5>
-                        </div>
-                        <div class="skills-item item-vue">
-                            <img src="./img/logos/vuejs.png" alt="">
-                            <h5>Vue JS</h5>
-                        </div>
-                        <div class="skills-item item-tailwind">
-                            <img src="./img/logos/tailwind.png" alt="">
-                            <h5>Tailwind</h5>
-                        </div>
-                        <div class="skills-item item-bootstrap">
-                            <img src="./img/logos/bootstrap.png" alt="">
-                            <h5>Bootstrap</h5>
-                        </div>
-                        <div class="skills-item item-markdown">
-                            <i class="fa-brands fa-markdown fa-2xl"></i>                            
-                            <h5>Markdown</h5>
-                        </div>
-
-                    </div>
-
-                    <div class="loading">
-                        <div class="loading-element el1">B</div>
-                        <div class="loading-element el2">A</div>
-                        <div class="loading-element el3">C</div>
-                        <div class="loading-element e4">K</div>
-                        <div class="loading-element el5">E</div>
-                        <div class="loading-element el6">N</div>
-                        <div class="loading-element el7">D</div>
-                    </div>
-
-                    <div class="skills-container">
-                        <div class="skills-item item-php">
-                            <img src="./img/logos/php.png" alt="">
-                            <h5>PHP</h5>
-                        </div>
-                        <div class="skills-item item-node">
-                            <img src="./img/logos/node.png" alt="">
-                            <h5>Node JS</h5>
-                        </div>
-                        <div class="skills-item item-express">
-                            <h5>Express JS</h5>
-                        </div>
-                    </div>
-
-                    <div class="loading">
-                        <div class="loading-element el1">D</div>
-                        <div class="loading-element el2">A</div>
-                        <div class="loading-element el3">T</div>
-                        <div class="loading-element e4">A</div>
-                        <div class="loading-element el5">B</div>
-                        <div class="loading-element el6">A</div>
-                        <div class="loading-element el7">S</div>
-                        <div class="loading-element el8">E</div>
-                    </div>
-
-                    <div class="skills-container">
-                        <div class="skills-item item-mysql">
-                            <h5>MySQL</h5>
-                        </div>
-                        <div class="skills-item item-nosql">
-                            <h5>NoSQL</h5>
-                        </div>
-                        <div class="skills-item item-firebase">
-                            <h5>Firebase</h5>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section id="documentations">
-                    
-                    <h6 class="title" onmouseover="reverseText(this)" onmouseout="normalText(this)">Mon Titre</h6>
-
-                    <div class="card">
-                        <div class="content">
-                          <h2 class="title">Mountain View</h2>
-                          <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                          <button class="btn">View Trips</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="content">
-                          <h2 class="title">Mountain View</h2>
-                          <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                          <button class="btn">View Trips</button>
-                        </div>
-                    </div>
-
-                </section>
-
+<!-- Section contact -->
                 <section id="contact">
+                    <h3>Contact</h3>
+                    <div class="observe-point"></div>
 
-                    <!-- Formulaire de contact -->
+                    <div class="contact-content">
+                        <!-- Formulaire de contact -->
+                        <form action="">
+
+                        </form>
+                    </div>
 
                 </section>
+
+<!-- Section footer -->
+                <footer>
+
+                    <div class="footer__hover-item">
+                        Credits
+                        <div id="footer-popup" class="footer-popup">
+                            <a href="#">Fontawesome</a>
+                            <a href="#">Google Fonts</a>
+                        </div>
+                    </div>
+
+                    <a id="legals" href="#">Mentions légales</a>
+
+                </footer>
             </main>
         </div>
 

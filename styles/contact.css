@@ -1,0 +1,13 @@
+#contact {
+    min-height: 100vh;
+    display: flex;
+}
+
+.contact-content {
+    border: 1px solid var(--light-grey);
+    border-radius: 10px;
+    height: 60vh;
+    width: 80%;
+    
+    margin: auto auto;
+}

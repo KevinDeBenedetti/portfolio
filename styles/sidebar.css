@@ -14,12 +14,20 @@
 }
 
 h1 {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 48px;
 }
 
 h2 {
-    font-size: 22px;
+    color: var(--text-grey_light);
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
     margin-top: 16px;
+}
+
+#sidebar p {
+    font-size: medium;
+    font-weight: 200;
 }
 
 #sidebar div:first-of-type > p:first-of-type {
@@ -54,8 +62,10 @@ h2 {
 
     font-size: 12px;
 }
-#sidebar-nav li > p {
-    font-size: 14px;
+
+#sidebar-nav a > p {
+    font-weight: 400;
+    font-size: medium;
 }
 
 .bar {

@@ -1,109 +1,258 @@
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 10px;
-    padding: 10px;
+#skills {
+    min-height: 100vh;
 }
 
-.skills-item {
-    background-color: #333;
+#skills > h4 {
+    color: var(--text-white);
+}
+
+.skills-content {
+    padding: 4% 0;
+    text-transform: uppercase;
+}
+
+.skills-content > h4 {
+    color: var(--text-white);
+}
+
+.skills-container {
+    padding: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.skills-item {    
+    margin: 1%;
+    color: var(--text-grey_light);
+    text-decoration: none;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: var(--text-grey_light);
-
-    transform: scale(1);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.skills-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.skills-item > .icon-container {
+    border: 1px solid var(--text-grey_light);
+    border-radius: 50%;
+
+    height: 80px;
+    width: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-item i {
+    color: var(--text-white);
+    font-size: 2em;
 }
 
 .skills-item img {
-    height: 40px;
+    max-height: 35px;
+    max-width: 35px;
 }
 
 h5 {
-    margin-top: 15px;
+    margin-top: 6%;
+}
+/* Logo HTML */
+.item-html:hover .icon-container {
+    border: 1px solid var(--html);
+}
+.item-html:hover i {
+    color: var(--html);
+}
+.item-html:hover .skills-title {
+    color: var(--html);
 }
 
-.item-html {
-    grid-column: 5 / span 2;
-    grid-row: 1;
+/* Logo CSS */
+.item-css:hover .icon-container {
+    border: 1px solid var(--css);
+}
+.item-css:hover i {
+    color: var(--css);
+}
+.item-css:hover .skills-title {
+    color: var(--css);
 }
 
-.item-css {
-    grid-column: 3 / span 2;
-    grid-row: 1;
+/* Logo JavaScript */
+.item-javascript:hover .icon-container {
+    border: 1px solid var(--javascript);
+}
+.item-javascript:hover i {
+    color: var(--javascript);
+}
+.item-javascript:hover .skills-title {
+    color: var(--javascript);
 }
 
-.item-js {
-    grid-column: 1 / span 2;
-    grid-row: 1;
+/* Logo Vue */
+.item-vue:hover .icon-container {
+    border: 1px solid var(--vue);
+}
+.item-vue:hover i {
+    color: var(--vue);
+}
+.item-vue:hover .skills-title {
+    color: var(--vue);
 }
 
-.item-vue {
-    grid-column: 1;
-    grid-row: 2;
+/* Logo Tailwind */
+.item-tailwind:hover .icon-container {
+    border: 1px solid var(--tailwind);
+}
+.item-tailwind:hover i {
+    color: var(--tailwind);
+}
+.item-tailwind:hover .skills-title {
+    color: var(--tailwind);
 }
 
-.item-tailwind {
-    grid-column: 3;
-    grid-row: 2;
+/* Logo Bootstrap */
+.item-bootstrap:hover .icon-container {
+    border: 1px solid var(--bootstrap);
+}
+.item-bootstrap:hover i {
+    color: var(--bootstrap);
+}
+.item-bootstrap:hover .skills-title {
+    color: var(--bootstrap);
 }
 
-.item-bootstrap {
-    grid-column: 4;
-    grid-row: 2;
+/* Logo Markdown */
+.item-markdown:hover .icon-container {
+    border: 1px solid var(--markdown);
+}
+.item-markdown:hover i {
+    color: var(--markdown);
+}
+.item-markdown:hover .skills-title {
+    color: var(--markdown);
 }
 
-.item-bootstrap i {
-    color: rgba(113, 44, 249, 0.80);
+/* Logo Php */
+.item-php:hover .icon-container {
+    border: 1px solid var(--php);
+}
+.item-php:hover i {
+    color: var(--php);
+}
+.item-php:hover .skills-title {
+    color: var(--php);
 }
 
-.item-markdown {
-    grid-column: 5;
-    grid-row: 2;
+/* Logo node */
+.item-node:hover .icon-container {
+    border: 1px solid var(--node);
+}
+.item-node:hover i {
+    color: var(--node);
+}
+.item-node:hover .skills-title {
+    color: var(--node);
 }
 
-.item-php {
-    grid-column: 3 / span 2;
-    grid-row: 1;
+/* Logo express */
+.item-express:hover .icon-container {
+    border: 1px solid var(--express);
+}
+.item-express:hover i {
+    color: var(--express);
+}
+.item-express:hover .skills-title {
+    color: var(--express);
 }
 
-.item-node {
-    grid-column: 1 ;
-    grid-row: 1;
+/* Logo wordpress */
+.item-wordpress:hover .icon-container {
+    border: 1px solid var(--wordpress);
+}
+.item-wordpress:hover i {
+    color: var(--wordpress);
+}
+.item-wordpress:hover .skills-title {
+    color: var(--wordpress);
 }
 
-.item-express {
-    grid-column: 2;
-    grid-row: 1;
+/* Logo mysql */
+.item-mysql:hover .icon-container {
+    border: 1px solid var(--mysql);
+}
+.item-mysql:hover i {
+    color: var(--mysql);
+}
+.item-mysql:hover .skills-title {
+    color: var(--mysql);
 }
 
-/* Modification des logos */
-.item-node img, .item-express img {
-    padding: 4px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
+/* Logo nosql */
+.item-nosql:hover .icon-container {
+    border: 1px solid var(--nosql);
+}
+/* .item-nosql:hover i {
+    color: var(--nosql);
+} */
+.item-nosql:hover .skills-title {
+    color: var(--nosql);
 }
 
-.item-mysql {
-    grid-column: 1;
-    grid-row: 1;
+/* Logo firebase */
+.item-firebase:hover .icon-container {
+    border: 1px solid var(--firebase);
+}
+.item-firebase:hover i {
+    color: var(--firebase);
+}
+.item-firebase:hover .skills-title {
+    color: var(--firebase);
 }
 
-.item-nosql {
-    grid-column: 2;
-    grid-row: 1;
+/* Logo figma */
+.item-figma:hover .icon-container {
+    border: 1px solid var(--figma);
+}
+.item-figma:hover i {
+    color: var(--figma);
+}
+.item-figma:hover .skills-title {
+    color: var(--figma);
 }
 
-.item-firebase {
-    grid-column: 3;
-    grid-row: 1;
+/* Logo photoshop */
+.item-photoshop:hover .icon-container {
+    border: 1px solid var(--photoshop);
+}
+.item-photoshop:hover i {
+    color: var(--photoshop);
+}
+.item-photoshop:hover .skills-title {
+    color: var(--photoshop);
+}
+
+/* Logo illustrator */
+.item-illustrator:hover .icon-container {
+    border: 1px solid var(--illustrator);
+}
+.item-illustrator:hover i {
+    color: var(--illustrator);
+}
+.item-illustrator:hover .skills-title {
+    color: var(--illustrator);
+}
+
+/* Logo indesign */
+.item-indesign:hover .icon-container {
+    border: 1px solid var(--indesign);
+}
+.item-indesign:hover i {
+    color: var(--indesign);
+}
+.item-indesign:hover .skills-title {
+    color: var(--indesign);
 }

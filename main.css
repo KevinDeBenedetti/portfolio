@@ -1,17 +1,26 @@
+/* Mise en forme générique pour tout le site */
 @import "./styles/layout.css";
 
-@import "./styles/layout.css";
-
+/* Variables utilisées */
 @import "./styles/variables.css";
 
+/* Contenu de la partie fixe */
 @import "./styles/sidebar.css";
 
+/* Contenu de la partie scrollable */
 @import "./styles/content.css";
 
+/* Contenu de la section realisations */
+@import "./styles/realisations.css";
+
+/* Contenu de la section skills */
 @import "./styles/skills.css";
 
-@import "./styles/loading-titles.css";
+/* Contenu de la section contact */
+@import "./styles/contact.css";
 
-@import "./styles/documentations.css";
+/* Contenu de la section documentations */
+@import "./styles/footer.css";
 
+/* Éléments pour s'adapter aux différentes tailles d'écrans */
 @import "./styles/responsive.css";
