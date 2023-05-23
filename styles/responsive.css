@@ -1,34 +1,60 @@
-/* Laptop large */
-@media(max-width: 1440px) {
+
+/* Smartphone */
+@media(min-width: 425px) {
+    #sidebar-nav {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media(min-width: 768px) {
 
 }
 
 /* Laptop */
-@media(max-width: 1024px) {
+@media(min-width: 1024px) {
 
     .container {
-        flex-direction: column;
-        height: 100vh;
+        display: flex;
     }
 
     #sidebar {
-        width: 100%;
+        width: 40%;
+        padding: 0 5%;
     }
 
     #sidebar-nav {
+        display: block;
+    }
+
+    #sticky-header {
         display: none;
     }
 
-    #content {
-        overflow-y: visible;
+    #realisations {
+        min-height: 100vh;
+        padding-top: 5%;
     }
 
-}
-/* Tablet */
-@media(max-width: 768px) {
+    #skills {
+        min-height: 100vh;
+        padding-top: 0;
+    }
 
+    #contact {
+        min-height: 100vh;
+        padding-top: 0;
+    }
 }
-/* Smartphone */
-@media(max-width: 425px) {
 
+/* Laptop large */
+@media(min-width: 1440px) {
+    .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    #sidebar {
+        padding: 0 1%;
+    }
 }

@@ -1,9 +1,7 @@
 #realisations {
-    min-height: 100vh;
-}
-
-.article-container {
-    padding: 4% 0;
+    /* min-height: 100vh; */
+    width: 90%;
+    margin: 0 auto;
 }
 
 .article-item {

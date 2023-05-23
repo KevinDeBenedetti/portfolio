@@ -1,5 +1,10 @@
 #skills {
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    /* padding: 4%; */
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15%;
+
 }
 
 #skills > h4 {

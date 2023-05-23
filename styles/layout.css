@@ -6,13 +6,7 @@
 }
 
 body {
-    display: flex;
     background-color: var(--bg-main);
-}
-
-.container {
-    display: flex;
-    height: 100vh;
 }
 
 #sticky-header {
@@ -20,7 +14,10 @@ body {
     height: 6vh;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--bg-grey_light);
+    font-family: 'Josefin Sans';
+    font-size: x-large;
+    color: var(--text-black);
     z-index: 10; 
     opacity: 0; /* rendre invisible par défaut */
     /* transition: opacity 0.3s; transition douce lors du changement de visibilité */
