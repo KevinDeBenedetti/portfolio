@@ -1,7 +1,15 @@
 
 /* Smartphone */
 @media(min-width: 425px) {
-
+    #infos {
+        flex-direction: row;
+    }
+    #infos img {
+        margin-right: 5%;
+    }
+    #infos a:first-of-type {
+        margin-right: 5%;
+    }
 }
 
 /* Tablet */

@@ -22,7 +22,7 @@ body {
     opacity: 0; /* rendre invisible par défaut */
     /* transition: opacity 0.3s; transition douce lors du changement de visibilité */
     transform: translateY(-100%); /* déplace le texte en dehors du haut de l'élément */
-    transition: opacity 0.3s, transform 0.5s; /* ajouter une transition sur transform */
+    transition: opacity 0.3s, transform 0.5s; /* ajoutemr une transition sur transform */
    
     display: flex;
     align-items: center;

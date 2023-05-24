@@ -43,9 +43,7 @@ h2 {
     align-items: center;
 }
 
-#infos a:first-of-type {
-    margin-right: 5%;
-}
+
 
 /* Menu nav */
 #sidebar-nav {
@@ -84,12 +82,12 @@ h2 {
     margin-top: 5%;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 #infos img {
     height: 60px;
     width: 60px;
-    margin-right: 5%;
 }
 
 #infos a {

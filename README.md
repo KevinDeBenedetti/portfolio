@@ -6,7 +6,23 @@
 ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
 
 ## Features
-- [ ] Menu burger - Responsive
+- [ ] Section contact
+
+## To Do
+- [ ] Download polices / folder (fonts/)
+```
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+```
+- [x] Responsive / Flex of tags (flex-row)
+- [x] Sticky section don't work on mobile
 
 ## Technical specifications
 - [x] Using css variables

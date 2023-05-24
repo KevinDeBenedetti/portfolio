@@ -9,7 +9,7 @@ export function initializeStickyTitle() {
     const options = {
     root: null, // viewport
     threshold: 0.8, // pour déclencher l'événement immédiatement
-    // rootMargin: "200px 0px" // pour déclencher l'événement 200px avant
+    rootMargin: "40% 0%" // pour déclencher l'événement 200px avant
     };
 
     // Callback pour l'Intersection Observer
@@ -31,6 +31,6 @@ export function initializeStickyTitle() {
 
     // Observer toutes les sections
     sections.forEach(section => {
-    observer.observe(section);
+        observer.observe(section);
     });
 }

@@ -20,13 +20,14 @@
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tag {
     font-size: small;
     background-color: var(--light-grey);
     padding: 3px 6px;
-    margin: 0 2px;
+    margin: 2%;
     border-radius: 4px;
 
     text-transform: uppercase;
