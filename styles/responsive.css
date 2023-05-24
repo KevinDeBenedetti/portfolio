@@ -1,9 +1,7 @@
 
 /* Smartphone */
 @media(min-width: 425px) {
-    #sidebar-nav {
-        display: none;
-    }
+
 }
 
 /* Tablet */
@@ -20,18 +18,16 @@
 
     #sidebar {
         max-height: 100vh;
-        width: 40%;
+        width: 50%;
         margin: 0;
-        padding: 2%;
+        padding: 2% 0 2% 2%;
     }
 
     #sidebar-nav {
-        display: block;
+        display: flex;
     }
 
-    #infos {
-        justify-content: space-between;
-    }
+
 
     #sticky-header {
         display: none;

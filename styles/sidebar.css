@@ -1,10 +1,9 @@
 #sidebar {
-    width: 90%;
-    margin: 5% auto;
+    padding: 5%;
     color: var(--text-white);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #sidebar div:first-of-type {
@@ -44,9 +43,13 @@ h2 {
     align-items: center;
 }
 
+#infos a:first-of-type {
+    margin-right: 5%;
+}
+
 /* Menu nav */
 #sidebar-nav {
-    padding-top: 5%;
+    display: none;
 }
 
 #sidebar-nav ul {
