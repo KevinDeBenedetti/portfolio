@@ -8,7 +8,7 @@ export function initializeStickyTitle() {
     // Options pour l'Intersection Observer
     const options = {
     root: null, // viewport
-    threshold: 0.5, // pour déclencher l'événement immédiatement
+    threshold: 0.8, // pour déclencher l'événement immédiatement
     // rootMargin: "200px 0px" // pour déclencher l'événement 200px avant
     };
 

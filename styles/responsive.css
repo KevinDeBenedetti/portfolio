@@ -23,11 +23,13 @@
         padding: 2% 0 2% 2%;
     }
 
+    /* #sidebar p {
+    font-size: medium;
+    } */
+
     #sidebar-nav {
         display: flex;
     }
-
-
 
     #sticky-header {
         display: none;
