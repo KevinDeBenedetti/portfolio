@@ -19,12 +19,18 @@
     }
 
     #sidebar {
+        max-height: 100vh;
         width: 40%;
-        padding: 0 5%;
+        margin: 0;
+        padding: 2%;
     }
 
     #sidebar-nav {
         display: block;
+    }
+
+    #infos {
+        justify-content: space-between;
     }
 
     #sticky-header {
@@ -33,7 +39,7 @@
 
     #realisations {
         min-height: 100vh;
-        padding-top: 5%;
+        padding-top: 2%;
     }
 
     #skills {
@@ -55,6 +61,10 @@
     }
 
     #sidebar {
-        padding: 0 1%;
+        padding: 5%;
+    }
+
+    #realisations {
+        padding-top: 5%;
     }
 }
