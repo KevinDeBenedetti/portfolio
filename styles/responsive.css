@@ -39,6 +39,11 @@
         display: flex;
     }
 
+    #content {
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
     #sticky-header {
         display: none;
     }
@@ -47,10 +52,29 @@
         min-height: 100vh;
         padding-top: 2%;
     }
+    .article-item {
+        padding: 7%;
+        margin: 3% 0;
+    }
+
+    .article-item:hover {
+        transform: scale(1.07);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .article-item__links a {
+        margin: 0;
+        margin-right: 10%;
+
+    }
 
     #skills {
         min-height: 100vh;
         padding-top: 0;
+    }
+
+    .skills-container {
+        justify-content: start;
     }
 
     #contact {

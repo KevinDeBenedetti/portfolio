@@ -33,7 +33,7 @@ h2 {
 }
 
 #sidebar div:first-of-type > p:last-of-type {
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 #sidebar a {
@@ -42,8 +42,6 @@ h2 {
     display: flex;
     align-items: center;
 }
-
-
 
 /* Menu nav */
 #sidebar-nav {
@@ -88,10 +86,12 @@ h2 {
 #infos img {
     height: 60px;
     width: 60px;
+    margin: 5% 0;
 }
 
 #infos a {
     padding: 2%;
+    margin: 5% 0;
 }
 
 #infos p {
