@@ -19,7 +19,9 @@
 }
 
 .tag {
+    font-family: var(--tags);
     font-size: small;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: var(--light-grey);
     padding: 1% 2%;
@@ -58,7 +60,8 @@
 }
 
 .article-item__links a > p {
-    margin-left: 8%;
+    font-family: var(--links);
+    margin-left: 10%;
     font-size: small;
 
 }

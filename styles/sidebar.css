@@ -12,8 +12,8 @@
 }
 
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: x-large;
+    font-family: var(--h1);
+    font-size: xx-large;
 }
 
 h2 {
@@ -95,8 +95,9 @@ h2 {
 }
 
 #infos p {
+    font-family: var(--links);
     font-size: small;
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 #sidebar div i:last-of-type {

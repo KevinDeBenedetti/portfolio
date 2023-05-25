@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', Arial, sans-serif;
+    font-family: var(--main), Arial, sans-serif;
 }
 
 body {
@@ -15,8 +15,9 @@ body {
     top: 0;
     left: 0;
     background-color: var(--bg-grey_light);
-    font-family: 'Josefin Sans';
+    font-family: var(--tags);
     font-size: x-large;
+    font-weight: 900;
     color: var(--text-black);
     z-index: 10; 
     opacity: 0; /* rendre invisible par défaut */

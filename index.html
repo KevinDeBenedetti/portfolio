@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Ajouter un favivon -->
-        <!-- <link rel="icon" type="image/png" href="favicon.png" sizes="32x32"> -->
+        <link rel="icon" type="image/png" href="img/PhotoCVdetoureeNB.png" sizes="32x32">
 
         <!-- CSS -->
         <link rel="stylesheet" href="./main.css" type="text/css">
@@ -16,9 +16,9 @@
         <script src="https://kit.fontawesome.com/2fe7c14157.js" crossorigin="anonymous"></script>
         
         <!-- Fonts Google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet"> -->
 
         <!-- Leaflet -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
@@ -188,6 +188,29 @@
 
                         </article>
 
+                        <article class="article-item">     
+                            
+                            <div class="tags">
+                                <div class="tag">JavaScript ES6</div>
+                                <div class="tag">CSS 3</div>
+                                <div class="tag">HTML 5</div>
+                            </div> 
+
+                            <h4>Portfolio</h4>
+
+                            <p>Mon portfolio sur lequel vous naviguez. Entièrement développé en languages natifs, le code est détaillé dans le repository.</p>
+                            
+                            <div class="article-item__links">
+
+                                <a href="https://github.com/KevinDeBenedetti/portfolio" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github fa-sm"></i>
+                                    <p>Repository</p>
+                                </a>
+
+                            </div>
+
+                        </article>
+
                     </div>
 
                 </section>
@@ -236,7 +259,8 @@
     
                             <a class="skills-item item-tailwind" href="https://tailwindcss.com/" target="_blank">
                                 <div class="icon-container">
-                                    <img src="./img/logos/tailwind.png" alt="Logo tailwind">
+                                    <img src="./img/logos/white-tailwind.png" alt="Logo tailwind" class="logo-tailwind_white">
+                                    <img src="./img/logos/tailwind.png" alt="Logo tailwind" class="logo-tailwind">
                                 </div>
     
                                 <h5 class="skills-title">Tailwind</h5>
@@ -307,7 +331,8 @@
     
                             <a class="skills-item item-mysql" href="https://www.mysql.com/fr/" target="_blank">
                                 <div class="icon-container">
-                                    <img src="./img/logos/mysql.png" alt="Logo MySQL">
+                                    <img src="./img/logos/white-mysql.png" alt="Logo MySQL" class="logo-mysql_white">
+                                    <img src="./img/logos/mysql.png" alt="Logo MySQL" class="logo-mysql">
                                 </div>
                                 <h5 class="skills-title">MySQL</h5>
                             </a>
@@ -321,8 +346,8 @@
     
                             <a class="skills-item item-firebase" href="https://firebase.google.com/" target="_blank">
                                 <div class="icon-container">
-                                    <img src="./img/logos/firebase.png" alt="">
-    
+                                    <img src="./img/logos/white-firebase.png" alt="Logo firebase" class="logo-firebase_white">
+                                    <img src="./img/logos/firebase.png" alt="Logo firebase" class="logo-firebase">
                                 </div>
                                 <h5 class="skills-title">Firebase</h5>
                             </a>
@@ -341,24 +366,27 @@
     
                             <a class="skills-item item-photoshop" href="https://www.adobe.com/fr/products/photoshop.html" target="_blank">
                                 <div class="icon-container">
-                                    <img src="./img/logos/photoshop.png" alt="Logo photoshop">
+                                    <img src="./img/logos/white-photoshop.png" alt="Logo photoshop" class="logo-photoshop_white">
+                                    <img src="./img/logos/photoshop.png" alt="Logo photoshop" class="logo-photoshop">
                                 </div>
                                 <h5 class="skills-title">Photoshop</h5>
                             </a>
     
                             <a class="skills-item item-illustrator" href="https://www.adobe.com/fr/products/illustrator.html" target="_blank">
                                 <div class="icon-container">
-                                    <img src="./img/logos/illustrator.png" alt="Logo Illustrator">
+                                    <img src="./img/logos/white-illustrator.png" alt="Logo Illustrator" class="logo-illustrator_white">
+                                    <img src="./img/logos/illustrator.png" alt="Logo Illustrator" class="logo-illustrator">
                                 </div>
                                 <h5 class="skills-title">Illustrator</h5>
                             </a>
     
-                            <div class="skills-item item-indesign" href="https://www.adobe.com/fr/products/indesign.html" target="_blank">
+                            <a class="skills-item item-indesign" href="https://www.adobe.com/fr/products/indesign.html" target="_blank">
                                 <div class="icon-container">
-                                    <img src="./img/logos/indesign.png" alt="Logo InDesign">
+                                    <img src="./img/logos/white-indesign.png" alt="Logo InDesign"class="logo-indesign_white">
+                                    <img src="./img/logos/indesign.png" alt="Logo InDesign"class="logo-indesign">
                                 </div>
                                 <h5 class="skills-title">InDesign</h5>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -392,7 +420,7 @@
         </div>
 
         <!-- JavaScript -->
-        <script type="module" src="./script.js" async></script>
+        <script type="module" src="./script.js" defer></script>
 
     </body>
 

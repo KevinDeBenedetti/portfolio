@@ -18,6 +18,7 @@
 
 .skills-content > h4 {
     color: var(--text-white);
+    font-size: x-large;
 }
 
 .skills-container {
@@ -62,7 +63,9 @@
 }
 
 h5 {
-    margin-top: 6%;
+    font-family: var(--links);
+    font-size: medium;
+    margin-top: 10%;
 }
 /* Logo HTML */
 .item-html:hover .icon-container {
@@ -117,6 +120,18 @@ h5 {
 }
 .item-tailwind:hover .skills-title {
     color: var(--tailwind);
+}
+/* Changement de logo (png) */
+.logo-tailwind {
+    display: none;
+}
+
+.item-tailwind:hover .logo-tailwind {
+    display: flex;
+}
+
+.item-tailwind:hover .logo-tailwind_white {
+    display: none;
 }
 
 /* Logo Bootstrap */
@@ -196,6 +211,19 @@ h5 {
     color: var(--mysql);
 }
 
+/* Changement de logo (png) */
+.logo-mysql {
+    display: none;
+}
+
+.item-mysql:hover .logo-mysql {
+    display: flex;
+}
+
+.item-mysql:hover .logo-mysql_white {
+    display: none;
+}
+
 /* Logo nosql */
 .item-nosql:hover .icon-container {
     border: 1px solid var(--nosql);
@@ -216,6 +244,19 @@ h5 {
 }
 .item-firebase:hover .skills-title {
     color: var(--firebase);
+}
+
+/* Changement de logo (png) */
+.logo-firebase {
+    display: none;
+}
+
+.item-firebase:hover .logo-firebase {
+    display: flex;
+}
+
+.item-firebase:hover .logo-firebase_white {
+    display: none;
 }
 
 /* Logo figma */
@@ -240,6 +281,19 @@ h5 {
     color: var(--photoshop);
 }
 
+/* Changement de logo (png) */
+.logo-photoshop {
+    display: none;
+}
+
+.item-photoshop:hover .logo-photoshop {
+    display: flex;
+}
+
+.item-photoshop:hover .logo-photoshop_white {
+    display: none;
+}
+
 /* Logo illustrator */
 .item-illustrator:hover .icon-container {
     border: 1px solid var(--illustrator);
@@ -251,6 +305,19 @@ h5 {
     color: var(--illustrator);
 }
 
+/* Changement de logo (png) */
+.logo-illustrator {
+    display: none;
+}
+
+.item-illustrator:hover .logo-illustrator {
+    display: flex;
+}
+
+.item-illustrator:hover .logo-illustrator_white {
+    display: none;
+}
+
 /* Logo indesign */
 .item-indesign:hover .icon-container {
     border: 1px solid var(--indesign);
@@ -260,4 +327,17 @@ h5 {
 }
 .item-indesign:hover .skills-title {
     color: var(--indesign);
+}
+
+/* Changement de logo (png) */
+.logo-indesign {
+    display: none;
+}
+
+.item-indesign:hover .logo-indesign {
+    display: flex;
+}
+
+.item-indesign:hover .logo-indesign_white {
+    display: none;
 }
