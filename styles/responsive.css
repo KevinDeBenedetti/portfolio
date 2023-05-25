@@ -37,6 +37,7 @@
 
     #sidebar-nav {
         display: flex;
+        margin-top: 5%;
     }
 
     #content {
