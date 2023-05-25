@@ -8,14 +8,15 @@ export function initializeStickyTitle() {
     // Options pour l'Intersection Observer
     const options = {
     root: null, // viewport
-    threshold: 0.8, // pour déclencher l'événement immédiatement
-    rootMargin: "40% 0%" // pour déclencher l'événement 200px avant
+    threshold: 0.5, // pour déclencher l'événement immédiatement
+    rootMargin: "400px 0px" // pour déclencher l'événement 200px avant
     };
 
     // Callback pour l'Intersection Observer
     const callback = entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
+        console.log(entry)
         // Mettre à jour le sticky header avec le titre de la section actuellement visible
         const title = entry.target.querySelector('h3').innerText;
         stickyHeader.innerText = title;
