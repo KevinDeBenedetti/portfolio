@@ -34,7 +34,7 @@
 }
 
 .skills-item {    
-    min-width: 10vw;
+    min-width: 100px;
 
     margin: 4%;
     color: var(--text-grey_light);
