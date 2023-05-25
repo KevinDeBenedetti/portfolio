@@ -77,6 +77,10 @@
         justify-content: start;
     }
 
+    .skills-item {
+        margin: 1%;
+    }
+
     #contact {
         min-height: 100vh;
         padding-top: 0;
