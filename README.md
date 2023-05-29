@@ -1,4 +1,4 @@
-# Welcome on my portfolio
+# My portfolio
 
 ## 100 % native code
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat) 
@@ -6,30 +6,15 @@
 ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
 
 ## Features
-- [ ] Section contact
-
-## To Do
-- [ ] Download polices / folder (fonts/)
-```
-@font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: 400;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-```
-- [x] Responsive / Flex of tags (flex-row)
-- [x] Sticky section don't work on mobile
+- [ ] Dark mode
+- [ ] Contact page
 
 ## Technical specifications
 - [x] Using css variables
 - [x] BEM naming convention
 - [x] Style decomposition (folders and css files)
 
-## Tailles d'écrans : 
+## Screens sizes :
 
 🖥 4k: 2560px
 
