@@ -9,7 +9,7 @@ export function initializeStickyTitle() {
     const options = {
     root: null, // viewport
     threshold: 0.5, // pour déclencher l'événement immédiatement
-    rootMargin: "-100px 0px" // pour déclencher l'événement 200px avant
+    rootMargin: "2% 0%" // pour déclencher l'événement 200px avant
     };
     
     let currentSection = null;
