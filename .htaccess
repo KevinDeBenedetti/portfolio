@@ -1,6 +1,13 @@
 # Activer la réécriture d'URL
 RewriteEngine On
 
+# Redirection du répertoire "repository" à la racine
+RewriteCond %{REQUEST_URI} !^/repository/
+RewriteRule ^(.*)$ /repository/$1 [L]
+
+# Redirection de "repository/index.html" vers la racine
+RewriteRule ^repository/index\.html$ / [R=301,L]
+
 # Rediriger le trafic HTTP vers HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
