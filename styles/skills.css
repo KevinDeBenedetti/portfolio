@@ -35,11 +35,9 @@
 
 .skills-item {    
     min-width: 100px;
-
     margin: 4%;
     color: var(--text-grey_light);
     text-decoration: none;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,8 +62,8 @@
 }
 
 .skills-item img {
-    max-height: 35px;
-    max-width: 35px;
+    height: auto;
+    width: 35px;
 }
 
 h5 {
@@ -73,6 +71,7 @@ h5 {
     font-size: medium;
     margin-top: 10%;
 }
+
 /* Logo HTML */
 .item-html:hover .icon-container {
     border: 1px solid var(--html);
@@ -127,19 +126,16 @@ h5 {
 .item-tailwind:hover .skills-title {
     color: var(--tailwind);
 }
+
 /* Changement de logo (png) */
 .logo-tailwind {
     display: none;
 }
-
 .item-tailwind:hover .logo-tailwind {
     display: flex;
 }
-
 .item-tailwind:hover .logo-tailwind_white {
     display: none;
-    width: 100%;
-    height: auto;
 }
 
 /* Logo Bootstrap */
@@ -223,15 +219,11 @@ h5 {
 .logo-mysql {
     display: none;
 }
-
 .item-mysql:hover .logo-mysql {
     display: flex;
 }
-
 .item-mysql:hover .logo-mysql_white {
     display: none;
-    width: 100%;
-    height: auto;
 }
 
 /* Logo nosql */
@@ -260,15 +252,11 @@ h5 {
 .logo-firebase {
     display: none;
 }
-
 .item-firebase:hover .logo-firebase {
     display: flex;
 }
-
 .item-firebase:hover .logo-firebase_white {
     display: none;
-    width: 100%;
-    height: auto;
 }
 
 /* Logo figma */
@@ -297,15 +285,11 @@ h5 {
 .logo-photoshop {
     display: none;
 }
-
 .item-photoshop:hover .logo-photoshop {
     display: flex;
 }
-
 .item-photoshop:hover .logo-photoshop_white {
     display: none;
-    width: 100%;
-    height: auto;
 }
 
 /* Logo illustrator */
@@ -323,15 +307,11 @@ h5 {
 .logo-illustrator {
     display: none;
 }
-
 .item-illustrator:hover .logo-illustrator {
     display: flex;
 }
-
 .item-illustrator:hover .logo-illustrator_white {
     display: none;
-    width: 100%;
-    height: auto;
 }
 
 /* Logo indesign */
@@ -349,13 +329,9 @@ h5 {
 .logo-indesign {
     display: none;
 }
-
 .item-indesign:hover .logo-indesign {
     display: flex;
 }
-
 .item-indesign:hover .logo-indesign {
     display: none;
-    width: 100%;
-    height: auto;
 }

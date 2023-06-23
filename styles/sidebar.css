@@ -85,7 +85,7 @@ h2 {
 
 #infos img {
     height: 60px;
-    width: 60px;
+    width: auto;
     margin: 5% 0;
 }
 
