@@ -138,6 +138,8 @@ h5 {
 
 .item-tailwind:hover .logo-tailwind_white {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 /* Logo Bootstrap */
@@ -228,6 +230,8 @@ h5 {
 
 .item-mysql:hover .logo-mysql_white {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 /* Logo nosql */
@@ -263,6 +267,8 @@ h5 {
 
 .item-firebase:hover .logo-firebase_white {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 /* Logo figma */
@@ -298,6 +304,8 @@ h5 {
 
 .item-photoshop:hover .logo-photoshop_white {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 /* Logo illustrator */
@@ -322,6 +330,8 @@ h5 {
 
 .item-illustrator:hover .logo-illustrator_white {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 /* Logo indesign */
@@ -344,6 +354,8 @@ h5 {
     display: flex;
 }
 
-.item-indesign:hover .logo-indesign_white {
+.item-indesign:hover .logo-indesign {
     display: none;
+    width: 100%;
+    height: auto;
 }
