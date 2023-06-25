@@ -29,7 +29,7 @@
     border-radius: 4px;
 }
 
-.article-item > h4 {
+.article-item > h6 {
     color: var(--text-grey_light);
     font-size: x-large;
     margin-top: 3%;
