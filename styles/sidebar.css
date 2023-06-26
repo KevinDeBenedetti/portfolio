@@ -84,8 +84,8 @@ h2 {
 }
 
 #infos img {
-    height: 100%;
-    width: auto;
+    max-width: 100%;
+    height: auto;
     margin: 5% 0;
 }
 

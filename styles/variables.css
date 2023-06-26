@@ -1,5 +1,7 @@
 /* Chargement des polices */
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@200;300;700&family=Ubuntu:wght@700&display=swap');
+
+/*@font-face {
     font-family: 'Roboto Mono';
     src: url('../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
     font-display: swap;
@@ -21,7 +23,7 @@
     font-family: 'Bruno Ace SC';
     src: url('../fonts/Bruno_Ace_SC/BrunoAceSC-Regular.ttf');
     font-display: swap;
-}
+}*/
 
 :root {
     /* Generic */
@@ -63,6 +65,5 @@
     --main: 'Roboto Mono', sans-serif;
     --h1: 'Josefin Sans', sans-serif;;
     --links: 'Ubuntu';
-    --tags: 'Bruno Ace SC';
     --tags: 'Ubuntu';
 }
