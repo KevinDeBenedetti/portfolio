@@ -303,7 +303,7 @@ h5 {
     color: var(--illustrator);
 }
 
-/* Changement de logo (png) */
+/* Changement de logo illustrator */
 .logo-illustrator {
     display: none;
 }
@@ -332,6 +332,6 @@ h5 {
 .item-indesign:hover .logo-indesign {
     display: flex;
 }
-.item-indesign:hover .logo-indesign {
+.item-indesign:hover .logo-indesign_white {
     display: none;
 }
