@@ -54,11 +54,9 @@ h2 {
 
 #sidebar-nav li {
     margin: 16px 10px;
-
     display: flex;
     align-items: center;
     text-transform: uppercase;
-
     font-size: medium;
 }
 

@@ -32,9 +32,8 @@ body {
   
 #sticky-header.visible {
     opacity: 1; /* rendre visible quand la classe "visible" est présente */
-    transform: translateY(0); 
+    transform: translateY(0);
     /* déplace le texte à sa position originale */
-
 }
 
 h3 {
