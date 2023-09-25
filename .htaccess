@@ -1,0 +1,62 @@
+# Activer la réécriture d'URL
+RewriteEngine On
+
+# Rediriger le trafic HTTP vers HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirection vers le www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Ne pas affichier le script index.html
+RewriteRule ^index\.html$ - [R=404,L]
+# RewriteRule ^robots\.txt$ - [R=404,L]
+
+
+# Forcer la fin d'URL avec slash
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+
+# Gérer les fichiers d'erreur personnalisés
+# ErrorDocument 404 /404.html
+# RewriteRule ^repository/404\.html$ /404_error/ [R=301,L]
+
+# Activer la compression gzip pour améliorer les performances
+<ifModule mod_gzip.c>
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+    mod_gzip_item_include handler ^cgi-script$
+    mod_gzip_item_include mime ^text/.*
+    mod_gzip_item_include mime ^application/x-javascript.*
+    mod_gzip_item_exclude mime ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+# Définir les en-têtes d'expiration pour améliorer la mise en cache
+<IfModule mod_expires.c>
+    # Active l'expiration des fichiers
+    ExpiresActive On
+
+    # Définit une politique de cache par défaut
+    ExpiresDefault "access plus 1 month"
+
+    # Cache de fichiers HTML, CSS et JavaScript
+    ExpiresByType text/html "access plus 1 month"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/x-javascript "access plus 1 month"
+
+    # Cache de fichiers pour les images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType application/pdf "access plus 1 year"
+    ExpiresByType application/x-shockwave-flash "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# Désactiver l'affichage des répertoires
+Options -Indexes
